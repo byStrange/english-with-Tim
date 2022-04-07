@@ -1,1 +1,7 @@
 @import url('./default.css');
+
+header {
+    width: 100%;
+    height: var(--s-header-height);
+    border: 1px solid #000;
+}
