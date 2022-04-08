@@ -12,8 +12,61 @@ body {
 }
 
 .container {
-    width: 95%;
+    width: 90%;
     max-width: 1700px;
     margin: 0 auto;
 }
 
+.img  img {
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    overflow: hidden;
+}
+
+ul li {
+    list-style: none;
+}
+
+.text {
+    font-weight: bold;
+}
+
+.text.big {
+    font-size: 60px;
+}
+
+.marked {
+    color: var(--s-main-color)
+}
+
+:is(main, header, footer) > .container {
+    height: 100%;
+}
+
+.center:not(.top) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center.top {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: var(--s-main-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 300ms;
+    border: none;
+    cursor: pointer;
+}
