@@ -35,7 +35,8 @@ ul li {
 }
 
 .marked {
-    color: var(--s-main-color)
+    color: var(--s-main-color);
+    font-weight: bold;
 }
 
 :is(main, header, footer) > .container {

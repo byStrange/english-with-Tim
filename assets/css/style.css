@@ -205,3 +205,41 @@ main .absolute.img {
 #courses .card .content ._descripton {
     max-width: 200px;
 }
+
+#results .cards{
+    margin-top: 40px;
+}
+
+#results .cards .card {
+    display: flex;
+}
+
+#results .cards .card img{
+    width: 250px;
+}
+
+#results .score {
+    margin-left: 30px;
+}
+
+#results .card .score p:not(.name) span:not(.marked){
+    opacity: 0.7;
+}
+
+#results .card .score p {
+    font-size: 24px;
+    width: 174px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.score .name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.score .band-score {
+    margin-top: 55px;
+    font-weight: bold;
+}
