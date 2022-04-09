@@ -1,6 +1,10 @@
 @import url('./default.css');
 @import url('https://gists.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css');
 
+/* main styles  */
+
+
+/* header section starts */
 header {
     width: 100%;
     height: var(--s-header-height);
@@ -68,6 +72,11 @@ header #move {
     opacity: .9;
 }
 
+/* header sectuion ends */
+
+
+/* main section starts */
+
 main {
     height: calc(100vh - var(--s-header-height));
     /* background: var(--s-main-background); */
@@ -77,7 +86,7 @@ main .container .context {
     width: 700px;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     height: 625px;
 }
 
@@ -92,9 +101,14 @@ main .absolute.img {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255,255,255,1);
-    box-shadow: 10px 0 20px 10px rgba(255,255,255,1)
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 10px 0 20px 10px rgba(255, 255, 255, 1)
 }
+
+/* main section ends */
+
+
+/* why we section starts */
 
 #whywe {
     background: var(--s-offer-content-background);
@@ -109,22 +123,21 @@ main .absolute.img {
     align-items: center;
 }
 
-#whywe .cards .card{
+#whywe .cards .card {
     width: 400px;
     margin-bottom: 80px;
     display: flex;
     align-items: center;
     cursor: default;
-}   
+}
 
-.cards .card > span {
+.cards .card>span {
     display: inline-block;
     max-width: 200px;
     font-size: 30px;
     font-weight: 400;
     transition: all 200ms;
 }
-
 
 .cards .card .icon {
     width: 70px;
@@ -138,11 +151,18 @@ main .absolute.img {
     transition: 250ms;
 }
 
-.cards .card .icon img{
+.cards .card .icon img {
     width: 35px;
 }
 
-
-.card:hover .icon  {
+.card:hover .icon {
     background: var(--s-main-color);
+}
+
+/* #whyWe section ends */
+
+
+#courses {
+    width: 100%;
+    padding-top: 50px;
 }

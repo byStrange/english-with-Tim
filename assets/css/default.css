@@ -4,9 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: "Gilroy", sans-serif;
 }
 
@@ -69,7 +66,7 @@ ul li {
 }
 
 .btn.default {
-    padding: 13px 37px;
+    padding: 15px 37px;
     border-radius: 10px;
     background: var(--s-main-color);
     color: #fff;
@@ -93,4 +90,5 @@ ul li {
 
 .container .title {
     font-size: 50px;
+    font-weight: 500;
 }
