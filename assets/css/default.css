@@ -1,5 +1,4 @@
 @import url('./root.css');
-@import url('https://gists.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css');
 
 * {
     margin: 0;
@@ -8,7 +7,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Gilroy", sans-serif;
 }
 
 .container {
@@ -59,14 +58,39 @@ ul li {
 
 .btn {
     display: inline-block;
-    padding: 15px 30px;
-    border-radius: 10px;
-    background: var(--s-main-color);
-    color: #fff;
-    font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     transition: all 300ms;
     border: none;
     cursor: pointer;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+.btn.default {
+    padding: 13px 37px;
+    border-radius: 10px;
+    background: var(--s-main-color);
+    color: #fff;
+    font-size: 16px;
+}
+.btn .fas {
+    opacity: 0;
+    transition: 250ms;
+}
+
+.btn:hover .fas {
+    opacity: 1;
+    transform: translateX(7px);
+}
+
+.btn:hover {
+    box-shadow: var(--s-main-header-box-shadow);
+    transform: translateX(-
+    3px)
+}
+
+.container .title {
+    font-size: 50px;
 }
