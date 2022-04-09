@@ -114,6 +114,7 @@ main .absolute.img {
     margin-bottom: 80px;
     display: flex;
     align-items: center;
+    cursor: default;
 }   
 
 .cards .card > span {
@@ -124,9 +125,6 @@ main .absolute.img {
     transition: all 200ms;
 }
 
-.card .icon span {
-    transition: 250ms;
-}
 
 .cards .card .icon {
     width: 70px;
@@ -137,8 +135,14 @@ main .absolute.img {
     align-items: center;
     justify-content: center;
     margin-right: 15px;
+    transition: 250ms;
 }
 
-.card .icon:hover span {
-    transform: translate(3px, -3px)
+.cards .card .icon img{
+    width: 35px;
+}
+
+
+.card:hover .icon  {
+    background: var(--s-main-color);
 }
