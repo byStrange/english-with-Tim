@@ -234,6 +234,39 @@ main .absolute.img {
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+    #results .cards .card img {
+        width: 150px !important;
+    }
+    #results .cards .card .score p {
+        font-size: 20px;
+        width: 100%;
+    }   
+    .container .title {
+        font-size: 30px !important;  
+    }
+    .container .title > span{
+        width: 100% !important;
+    }
+    .cards .card>span {
+        font-size: 20px;
+    }
+    .text.big {
+        font-size: 30px !important; 
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #results .cards .card img {
+        width: 200px !important;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    #results .cards .card {
+        flex-direction : column !important;
+    }
+}
+
 .score .name {
     font-weight: bold;
     font-size: 30px;
@@ -242,4 +275,11 @@ main .absolute.img {
 .score .band-score {
     margin-top: 55px;
     font-weight: bold;
+}
+
+#teachers {
+    background: var(--s-offer-content-background);
+    padding-top: 50px;
+    color: #fff;
+    margin-top: 100px
 }

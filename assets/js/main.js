@@ -25,7 +25,7 @@
 //     }).mount()
 // })();
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $("#courses .owl-carousel").owlCarousel({
         responsive: {
             0: {
               items: 1,
@@ -45,4 +45,20 @@ $(document).ready(function(){
       dots: false,
       nav:true,
     });
+
+    $("#results .owl-carousel").owlCarousel({
+        // center: true
+        items: 2,
+        responsive: {
+            0: {
+              items: 1,
+            },
+            1400: {
+              items: 2,
+            },
+            1600: {
+                items: 3
+            }
+          },
+    })
   });

@@ -31,7 +31,7 @@
                     <img src="assets/media/logo/logo.png" alt="English with Tim" width="70px">
                 </a>
             </div>
-            <ul .nav-links>
+            <ul .nav-links lg:display:none!>
                 <li><a href="#" .active>Основной</a></li>
                 <li><a href="#">Курсы</a></li>
                 <li><a href="#">Резултаты</a></li>
@@ -48,18 +48,20 @@
     <!-- main -->
     <main>
         <div .container.center.top>
-            <div .context zIndex="4" position="relative">
-                <div .text padding="0 20px" marginBottom="30px">
-                    <span>
-                        Only <span .marked>best</span> english education center
-                    </span>
+            <div .context zIndex="4" position="relative" sm:justify-content:space-between!>
+                <div>
+                    <div .text padding="0 20px" marginBottom="30px">
+                        <span>
+                            Only <span .marked>best</span> english education center
+                        </span>
+                    </div>
+                    <div .text.big>
+                        <span>
+                            <span .marked>Курсы английского.</span> English with tim научит говорить как носитель
+                        </span>
+                    </div>
                 </div>
-                <div .text.big>
-                    <span>
-                        <span .marked>Курсы английского.</span> English with tim научит говорить как носитель
-                    </span>
-                </div>
-                <div marginTop="50px">
+                <div marginTop="50px" sm:display:flex!  justifyContent="center">
                     <button .default.btn>
                         <span>
                             Записаться на курс
@@ -69,7 +71,7 @@
                 </div>
             </div>
         </div>
-        <div .absolute.img left="0" bottom="-10px">
+        <div .absolute.img left="0" bottom="-10px" md:display:none!>
             <img src="assets/media/images/header_bottom.png" width="250px">
         </div>
         <div .absolute.img bottom="0" right="0">
@@ -215,8 +217,8 @@
             <div .title>
                 <span display="inline-block" width="500px">Результаты наших учеников</span>
             </div>
-            <div .cards>
-                <div .card>
+            <div .cards.owl-carousel>
+                <div .card.item>
                     <div .left-side>
                         <img src="assets/media/images/ielts/score-1.png" alt="">
                     </div>
@@ -241,10 +243,132 @@
                         </p>
                     </div>
                 </div>
+                <div .card.item>
+                    <div .left-side>
+                        <img src="assets/media/images/ielts/score-1.png" alt="">
+                    </div>
+                    <div .score>
+                        <p .name>
+                            <span>Chris moore</span>
+                        </p>
+                        <p>
+                            <span>Listening:</span><span .marked>8.5</span>
+                        </p>
+                        <p>
+                            <span>Reading:</span><span .marked>8.0</span>
+                        </p>
+                        <p>
+                            <span>Writing:</span><span .marked>6.0</span>
+                        </p>
+                        <p>
+                            <span>Speaking:</span><span .marked>6.5</span>
+                        </p>
+                        <p .band-score>
+                            Bandscore:<span .marked>7.5</span>
+                        </p>
+                    </div>
+                </div>
+                <div .card.item>
+                    <div .left-side>
+                        <img src="assets/media/images/ielts/score-1.png" alt="">
+                    </div>
+                    <div .score>
+                        <p .name>
+                            <span>Chris moore</span>
+                        </p>
+                        <p>
+                            <span>Listening:</span><span .marked>8.5</span>
+                        </p>
+                        <p>
+                            <span>Reading:</span><span .marked>8.0</span>
+                        </p>
+                        <p>
+                            <span>Writing:</span><span .marked>6.0</span>
+                        </p>
+                        <p>
+                            <span>Speaking:</span><span .marked>6.5</span>
+                        </p>
+                        <p .band-score>
+                            Bandscore:<span .marked>7.5</span>
+                        </p>
+                    </div>
+                </div>
+                <div .card.item>
+                    <div .left-side>
+                        <img src="assets/media/images/ielts/score-1.png" alt="">
+                    </div>
+                    <div .score>
+                        <p .name>
+                            <span>Chris moore</span>
+                        </p>
+                        <p>
+                            <span>Listening:</span><span .marked>8.5</span>
+                        </p>
+                        <p>
+                            <span>Reading:</span><span .marked>8.0</span>
+                        </p>
+                        <p>
+                            <span>Writing:</span><span .marked>6.0</span>
+                        </p>
+                        <p>
+                            <span>Speaking:</span><span .marked>6.5</span>
+                        </p>
+                        <p .band-score>
+                            Bandscore:<span .marked>7.5</span>
+                        </p>
+                    </div>
+                </div>
+                <div .card.item>
+                    <div .left-side>
+                        <img src="assets/media/images/ielts/score-1.png" alt="">
+                    </div>
+                    <div .score>
+                        <p .name>
+                            <span>Chris moore</span>
+                        </p>
+                        <p>
+                            <span>Listening:</span><span .marked>8.5</span>
+                        </p>
+                        <p>
+                            <span>Reading:</span><span .marked>8.0</span>
+                        </p>
+                        <p>
+                            <span>Writing:</span><span .marked>6.0</span>
+                        </p>
+                        <p>
+                            <span>Speaking:</span><span .marked>6.5</span>
+                        </p>
+                        <p .band-score>
+                            Bandscore:<span .marked>7.5</span>
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
         </div>
     </section>
+
+    <section #teachers>
+        <div .container>
+            <div>
+                <div>
+                    <button .btn.sm>
+                        <span>Skilled life <span .marked>teachers</span></span>
+                    </button>
+                </div>
+                <div .title>
+                    <span display="inline-block" width="450px">Познакомьте с нашими учителями.</span>
+                </div>
+                <div marginTop="50px">
+                    <button .btn.default>
+                        <span>Все учителя</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- footer -->
     <footer></footer>
     <!-- /footer -->
