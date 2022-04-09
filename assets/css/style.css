@@ -116,13 +116,6 @@ main .absolute.img {
     color: #fff;
 }
 
-#whywe .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
 #whywe .cards .card {
     width: 400px;
     margin-bottom: 80px;
@@ -165,4 +158,50 @@ main .absolute.img {
 #courses {
     width: 100%;
     padding-top: 50px;
+}
+
+#courses .cards .card {
+    max-width: 400px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 !important;
+}
+
+#courses .cards .card .img.top.header img{
+    transition: all 350ms;
+}
+
+#courses .cards .card:hover .img.top.header img{
+    transform: scale(1.1);
+}
+
+#courses .card ._title{
+    font-size: 27px;
+    font-weight: bold;
+    position: relative;
+}
+
+#courses .card ._title::after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background: var(--s-main-color);
+}
+
+#courses .cards .content{
+    width: 90%;
+    float: right;
+    margin-top: 20px;
+}
+
+#courses .card .content ._descripton {
+    max-width: 200px;
 }

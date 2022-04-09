@@ -9,7 +9,7 @@
 
 .container {
     width: 90%;
-    max-width: 1700px;
+    max-width: 1700px !important;
     margin: 0 auto;
 }
 
@@ -91,4 +91,11 @@ ul li {
 .container .title {
     font-size: 50px;
     font-weight: 500;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }

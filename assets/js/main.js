@@ -16,3 +16,33 @@
     })
 })();
 
+// (function(){
+//     new Splide('#courses .splide', {
+//         rewind: true, 
+//         padding: '5rem',
+//         width: "500px",
+//         perPage: 1
+//     }).mount()
+// })();
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        responsive: {
+            0: {
+              items: 1,
+            },
+            1000: {
+              items: 3,
+            }
+          },
+    reponsiveClass: true,
+    navText: [
+        '<i class="fa fa-angle-left"></i>',
+        '<i class="fa fa-angle-right"></i>'
+    ],
+      autoplayHoverPause: false,
+      autoplay: false,
+      smartSpeed: 1000,
+      dots: false,
+      nav:true,
+    });
+  });
