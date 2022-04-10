@@ -12,8 +12,9 @@
     <!-- font awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- /font awesome css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    
     <!-- main css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- /main css -->
@@ -164,7 +165,7 @@
                     </button>
                 </div>
             </div>
-            <div .cards.owl-carousel marginTop="60px">
+            <div .cards.owl-carousel.owl-theme marginTop="60px">
                 <div .card>
                     <div .img.top.header>
                         <img src="assets/media/images/courses/course-1.png" alt="course_1">
@@ -350,7 +351,7 @@
     </section>
 
     <section #teachers>
-        <div .container>
+        <div .container sm:flex-direction:column!>
             <div>
                 <div>
                     <button .btn.sm>
@@ -360,13 +361,146 @@
                 <div .title>
                     <span display="inline-block" width="450px">Познакомьте с нашими учителями.</span>
                 </div>
-                <div marginTop="50px">
+                <div marginTop="50px" sm:display:none!>
                     <button .btn.default>
                         <span>Все учителя</span>
+                        <span .fas.fa-angle-right></span>
                     </button>
                 </div>
             </div>
-            <div .cards>
+            <div .cards.owl-carousel.owl-theme light marginTop="20px">
+                <div .card>
+                    <div .img>
+                        <img src="assets/media/images/slider_users/user-1.png" alt="">
+                        <div .share>
+                            <div .open display="flex" width="100%" justifyContent="space-between">
+                                <div .icon>
+                                    <i class="fas fa-share-nodes"></i>
+                                </div>
+                                <div .hidden display="flex" >
+                                    <div .icon>
+                                        <i .fa-brands.fa-facebook-f></i>
+                                    </div>
+                                    
+                                    <div .icon>
+                                        <i .fa-brands.fa-instagram></i>
+                                    </div>
+    
+                                    <div .icon>
+                                        <i .fa-brands.fa-twitter></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div .content>
+                        <p .name>
+                            <span>Chriss Moore</span>
+                        </p>
+                        <p>
+                            <span>8 years of experience</span>
+                        </p>
+                    </div>
+                </div>
+                <div .card>
+                    <div .img>
+                        <img src="assets/media/images/slider_users/user-1.png" alt="">
+                        <div .share>
+                            <div .open display="flex" width="100%" justifyContent="space-between">
+                                <div .icon>
+                                    <i class="fas fa-share-nodes"></i>
+                                </div>
+                                <div .hidden display="flex" >
+                                    <div .icon>
+                                        <i .fa-brands.fa-facebook-f></i>
+                                    </div>
+                                    
+                                    <div .icon>
+                                        <i .fa-brands.fa-instagram></i>
+                                    </div>
+    
+                                    <div .icon>
+                                        <i .fa-brands.fa-twitter></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div .content>
+                        <p .name>
+                            <span>Chriss Moore</span>
+                        </p>
+                        <p>
+                            <span>8 years of experience</span>
+                        </p>
+                    </div>
+                </div>
+                <div .card>
+                    <div .img>
+                        <img src="assets/media/images/slider_users/user-1.png" alt="">
+                        <div .share>
+                            <div .open display="flex" width="100%" justifyContent="space-between">
+                                <div .icon>
+                                    <i class="fas fa-share-nodes"></i>
+                                </div>
+                                <div .hidden display="flex" >
+                                    <div .icon>
+                                        <i .fa-brands.fa-facebook-f></i>
+                                    </div>
+                                    
+                                    <div .icon>
+                                        <i .fa-brands.fa-instagram></i>
+                                    </div>
+    
+                                    <div .icon>
+                                        <i .fa-brands.fa-twitter></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div .content>
+                        <p .name>
+                            <span>Chriss Moore</span>
+                        </p>
+                        <p>
+                            <span>8 years of experience</span>
+                        </p>
+                    </div>
+                </div>
+                <div .card>
+                    <div .img>
+                        <img src="assets/media/images/slider_users/user-1.png" alt="">
+                        <div .share>
+                            <div .open display="flex" width="100%" justifyContent="space-between">
+                                <div .icon>
+                                    <i class="fas fa-share-nodes"></i>
+                                </div>
+                                <div .hidden display="flex" >
+                                    <div .icon>
+                                        <i .fa-brands.fa-facebook-f></i>
+                                    </div>
+                                    
+                                    <div .icon>
+                                        <i .fa-brands.fa-instagram></i>
+                                    </div>
+    
+                                    <div .icon>
+                                        <i .fa-brands.fa-twitter></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div .content>
+                        <p .name>
+                            <span>Chriss Moore</span>
+                        </p>
+                        <p>
+                            <span>8 years of experience</span>
+                        </p>
+                    </div>
+                </div>
                 <div .card>
                     <div .img>
                         <img src="assets/media/images/slider_users/user-1.png" alt="">
@@ -401,6 +535,18 @@
                     </div>
                 </div>
             </div>
+            <div marginTop="50px" sm:display:flex!>
+                <button .btn.default>
+                    <span>Все учителя</span>
+                    <span .fas.fa-angle-right></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section #about-us>
+        <div .container>
+            
         </div>
     </section>
 

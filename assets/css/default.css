@@ -7,6 +7,10 @@
     font-family: "Gilroy", sans-serif;
 }
 
+body {
+    overflow-x: hidden
+} 
+
 .container {
     width: 90%;
     max-width: 1700px !important;

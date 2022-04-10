@@ -15,15 +15,6 @@
         }
     })
 })();
-
-// (function(){
-//     new Splide('#courses .splide', {
-//         rewind: true, 
-//         padding: '5rem',
-//         width: "500px",
-//         perPage: 1
-//     }).mount()
-// })();
 $(document).ready(function(){
     $("#courses .owl-carousel").owlCarousel({
         responsive: {
@@ -35,19 +26,16 @@ $(document).ready(function(){
             }
           },
     reponsiveClass: true,
-    navText: [
-        '<i class="fa fa-angle-left"></i>',
-        '<i class="fa fa-angle-right"></i>'
-    ],
       autoplayHoverPause: false,
       autoplay: false,
       smartSpeed: 1000,
-      dots: false,
-      nav:true,
+      dots: true,
+      center: true,
+      margin: 10
     });
 
     $("#results .owl-carousel").owlCarousel({
-        // center: true
+        center: true,
         items: 2,
         responsive: {
             0: {
@@ -63,9 +51,25 @@ $(document).ready(function(){
     })
   });
 
+$('#teachers .owl-carousel').owlCarousel({
+    margin: 40,
+    dots: !0,
+    responsive: {
+        0: {
+          items: 1,
+        },
+        1400: {
+          items: 2,
+        },
+        1600: {
+            items: 3
+        }
+      },
+})
+
 
 $('.share .icon:first-child').on('mouseenter', function (e) {
-    $('.share .hidden').addClass('open')
+    $(this)[0].parentElement.querySelector('.hidden').classList.add('open')
 })
 
 

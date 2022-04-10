@@ -259,6 +259,9 @@ main .absolute.img {
     .text.big {
         font-size: 30px !important; 
     }
+    #teachers {
+        padding: 40px 0 !important;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -351,3 +354,64 @@ main .absolute.img {
     background: var(--s-main-color);
     color: #fff;
 }
+
+  
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #1A1A1A;
+    display: block;
+    opacity: .5;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+  }
+  
+  .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #1A1A1A;
+    opacity: 1;
+  }
+  
+  .owl-theme[light]  .owl-dots .owl-dot span{
+    background: #fff;
+    opacity: .5;
+  }
+  
+  .owl-theme[light]  .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    opacity: 1;
+  }
+  
+  .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot.owl-nav {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    background-color: red !important;
+    display: block;
+    padding: 0 .3em !important;
+    font-size: 3em;
+    margin: 0;
+    cursor: pointer;
+    color: #fff;
+    transform: translate(-50%, -50%);
+  }
+  
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot.owl-nav {
+    position: absolute;
+    right: -23px;
+    top: 50%;
+    background-color: red !important;
+    display: block ;
+    padding: 0 .3em !important;
+    font-size: 3em ;
+    margin: 0;
+    cursor: pointer;
+    color: #fff;
+    transform: translate(-50%, -50%);
+  }
