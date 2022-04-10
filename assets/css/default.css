@@ -99,9 +99,33 @@ ul li {
     font-weight: 500;
 }
 
+.container .title span{
+    display: inline-block;
+    max-width: 500px;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.dots {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.dots .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+.dots .dot:not(:last-child) {
+    margin-right: 10px;
+}
+.absolute.img {
+    position: absolute;
 }
