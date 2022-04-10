@@ -132,7 +132,7 @@ main .absolute.img {
     transition: all 200ms;
 }
 
-.cards .card .icon {
+#whywe .cards .card .icon {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -144,11 +144,11 @@ main .absolute.img {
     transition: 250ms;
 }
 
-.cards .card .icon img {
+#whywe .cards .card .icon img {
     width: 35px;
 }
 
-.card:hover .icon {
+#whywe .card:hover .icon {
     background: var(--s-main-color);
 }
 
@@ -212,10 +212,15 @@ main .absolute.img {
 
 #results .cards .card {
     display: flex;
+    cursor: pointer;
 }
 
+#results .cards .card:hover img {
+    transform: scale(1.1);
+}
 #results .cards .card img{
     width: 250px;
+    transition: all 200ms;
 }
 
 #results .score {
@@ -281,5 +286,68 @@ main .absolute.img {
     background: var(--s-offer-content-background);
     padding-top: 50px;
     color: #fff;
-    margin-top: 100px
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+#teachers > .container {
+    display: flex;
+    align-items: center;
+}
+
+#teachers .cards .card img {
+    width: 300px;
+}
+
+#teachers .cards .name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#teachers .cards  :not(.name) {
+    font-size: 20px;
+}
+
+#teachers .img {
+    position: relative;   
+}
+
+#teachers .img .share{
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+}
+.share .icon {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms;
+}
+
+.share .hidden .icon {
+    margin-left: 10px;
+}
+
+.share .hidden {
+    transition: all 250ms;
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.share .hidden.open {
+    opacity: 1;
+    width: 200px;
+}
+
+.share .icon:hover {
+    background: var(--s-main-color);
+    color: #fff;
 }

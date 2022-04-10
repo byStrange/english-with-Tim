@@ -62,3 +62,13 @@ $(document).ready(function(){
           },
     })
   });
+
+
+$('.share .icon:first-child').on('mouseenter', function (e) {
+    $('.share .hidden').addClass('open')
+})
+
+
+$('.share').on('mouseleave', function (e) {
+    $('.share .hidden').removeClass('open')
+})
