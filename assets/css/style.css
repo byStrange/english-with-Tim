@@ -248,6 +248,13 @@ main .absolute.img {
 }
 
 @media screen and (max-width: 768px) {
+    #gallery .gallery .line{
+        display: flex;
+    }
+    .gallery .row .col {
+        height: 140px !important;
+        max-width: 200px !important;
+    }
     #results .cards .card img {
         width: 150px !important;
     }
@@ -280,7 +287,6 @@ main .absolute.img {
     .text.big {
         font-size: 30px !important;
     }
-
     #teachers {
         padding: 40px 0 !important;
     }
@@ -292,7 +298,14 @@ main .absolute.img {
         margin: 0 auto;
         margin-bottom: 20px;
     }
-
+    .gallery .line {
+        flex-direction: column;
+    }
+    .gallery .row .col {
+        margin-left: 0 !important;
+        height: 140px !important;
+        max-width: 100% !important;
+    }
     #results .cards .card {
         flex-direction: column !important;
     }
@@ -475,4 +488,33 @@ main .absolute.img {
 }
 #faq li.active span[button].collapse::after{
     content: '-'
+}
+
+#gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery .row {
+    display: flex;
+    overflow: visible;
+    margin-left: -9px;
+    margin-top: 50px;
+}
+.gallery .row .col {
+    height: 300px;
+    max-width: 520px
+}
+
+.gallery .row .col .img{
+    width: 100%;
+    height: 100%;
+}
+.gallery .row .col{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.gallery .row .col img{
+    width: 100%;
+    height: 100%;
 }

@@ -53,6 +53,7 @@ $(document).ready(function () {
 
 $('#teachers .owl-carousel').owlCarousel({
     margin: 40,
+    center: true,
     dots: !0,
     responsive: {
         0: {
