@@ -81,7 +81,8 @@ header #move {
 
 main {
     height: calc(100vh - var(--s-header-height));
-    /* background: var(--s-main-background); */
+    background: var(--s-main-background);
+    position: relative;
 }
 
 main .container .context {
@@ -90,14 +91,14 @@ main .container .context {
     flex-direction: column;
     justify-content: center;
     height: 625px;
+    
 }
 
 main .absolute.img {
     position: absolute;
-    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
 }
 
-.shadow {
+/* .shadow {
     position: absolute;
     width: 200px;
     height: 100%;
@@ -105,7 +106,7 @@ main .absolute.img {
     left: 0;
     background: rgba(255, 255, 255, 1);
     box-shadow: 10px 0 20px 10px rgba(255, 255, 255, 1)
-}
+} */
 
 main .messages {
     top: 50%;
@@ -123,10 +124,10 @@ main .messages .message img{
     z-index: 2;
 }
 main .messages .message p{
-    padding: 5px 20px;
+    padding: 10px 25px;
     background: #fff;
     border-radius: 10px;
-    margin-left: -10px;
+    margin-left: -20px;
     position: relative;
     z-index: 1;
 }

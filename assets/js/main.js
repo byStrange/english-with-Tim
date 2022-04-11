@@ -100,7 +100,7 @@ document.querySelectorAll('dots').forEach(e => {
 $(function(){
     $(document).ready(function () {
         if(window.innerWidth < 1124) {
-            $('header .nav-links').slideUp(100)
+            $('header .nav-links').slideUp(100);
         }
         $('#faq .hidden').slideUp();
         $('#faq .collapse[button]').click(function(e){
