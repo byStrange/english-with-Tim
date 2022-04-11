@@ -9,6 +9,8 @@ header {
     width: 100%;
     height: var(--s-header-height);
     box-shadow: var(--s-main-header-box-shadow);
+    position: relative;
+    z-index: 10;
 }
 
 header .nav-links {
@@ -581,6 +583,83 @@ img {
     height: 100%;
 }
 
+#contact {
+    margin-bottom: 100px;
+}
+
+#contact .contact-container {
+    width: 80%;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+#contact .row {
+    justify-content: center;
+}
+
+#contact .contact-container .col:first-child {
+    background: var(--s-main-color);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 40%;
+}
+
+#contact form{
+    width: 100%;
+}
+
+#contact .absolute.img > div {
+    width: 70px; 
+     height: 70px; 
+     background: var(--s-offer-content-background); 
+     display: flex; 
+     justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+}
+
+#contact .absolute.img, #contact .absolute.img * {
+    transition: 1000ms;
+}
+#contact .absolute.img._  {
+    right: -70px !important;
+}
+#contact .absolute.img._ span {
+    transform: rotate(45deg)
+}
+
+#contact form > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+#contact .contact-container .col#col{
+    width: 60%;
+}
+#contact .contact-container .col {
+    padding: 90px 35px 50px 20px;
+}
+
+:is(#contact, form)  input, textarea {
+    border: none;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--s-offer-content-background);
+    width: 47%;
+    font-size: 18px;
+}
+
+:not(a) :focus {
+    border-bottom: 2px solid var(--s-offer-content-background);
+}
+
+:is(#contact, form)  textarea {
+    width: 100%;
+}
+
 #footer {
     background: var(--s-offer-content-background);
     padding-top: 25px;
@@ -620,10 +699,13 @@ img {
     margin-right: 20px;
 }
 
-#footer p a {
+:is(#footer, #contact) p a {
     color: #fff;
     text-decoration: none;
     transition: 200ms; 
+}
+:is(#footer, #contact) p {
+    margin-bottom: 15px;
 }
 
 #footer li a:hover {
@@ -635,11 +717,9 @@ img {
     color: #fff;
 }
 
-#footer p {
-    margin-bottom: 15px;
-}
 
-#footer .icon {
+
+:is(#footer, #contact) .icon {
     font-size: 18px;
     width: 30px;
     height: 30px;
@@ -652,10 +732,11 @@ img {
     transition: 250ms;
 }
 
-#footer .icon:hover {
+:is(#footer, #contact) .icon:hover {
     outline: 1px solid gray;
 }
 
-#footer .icon:not(:last-child) {
-    margin-right: 20px;
+:is(#footer, #contact) .icon:not(:first-child) {
+    margin-left: 10px;
 }
+

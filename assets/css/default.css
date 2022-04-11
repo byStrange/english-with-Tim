@@ -9,7 +9,7 @@
 
 body {
     overflow-x: hidden
-} 
+}
 
 .container {
     width: 90%;
@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
 }
 
-.img  img {
+.img img {
     width: 100%;
     height: 100%;
 }
@@ -38,6 +38,10 @@ img {
     transition: all 350ms;
 }
 
+:focus {
+    outline: none;
+}
+
 .burger {
     cursor: pointer;
     font-size: 20px;
@@ -47,12 +51,17 @@ img {
     font-size: 60px;
 }
 
+.row {
+    width: 100%;
+    display: flex;
+}
+
 .marked {
     color: var(--s-main-color);
     font-weight: bold;
 }
 
-:is(main, header, footer) > .container {
+:is(main, header, footer)>.container {
     height: 100%;
 }
 
@@ -87,6 +96,7 @@ img {
     color: #fff;
     font-size: 16px;
 }
+
 .btn .fas {
     opacity: 0;
     transition: 250ms;
@@ -99,8 +109,7 @@ img {
 
 .btn:hover {
     box-shadow: var(--s-main-header-box-shadow);
-    transform: translateX(-
-    3px)
+    transform: translateX(- 3px)
 }
 
 .container .title {
@@ -108,7 +117,7 @@ img {
     font-weight: 500;
 }
 
-.container .title span{
+.container .title span {
     display: inline-block;
     max-width: 500px;
 }
@@ -132,9 +141,11 @@ img {
     border-radius: 50%;
     margin-bottom: 8px;
 }
+
 .dots .dot:not(:last-child) {
     margin-right: 10px;
 }
+
 .absolute.img {
     position: absolute;
 }

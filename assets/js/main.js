@@ -161,3 +161,8 @@ $(document).ready(function () {
 $('.burger').click(e => {
     $('header .nav-links').slideToggle()
 })
+
+$('#hideform').click(e => {
+    $('#contact #col').toggle(1000);
+    document.querySelectorAll('#contact .absolute.img')[1].classList.toggle('_')
+})
