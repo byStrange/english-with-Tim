@@ -85,6 +85,11 @@ main {
     position: relative;
 }
 
+main .container::after {
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
 main .container .context {
     width: 700px;
     display: flex;
@@ -221,6 +226,13 @@ main .messages .message p{
     padding-top: 50px;
 }
 
+#courses .container::after {
+    left: 50% !important;
+    transform: translateX(-50%);
+    color: #1a1a1a !important;
+    opacity: .05
+}
+
 #courses .cards .card {
     max-width: 400px !important;
     display: flex;
@@ -265,6 +277,11 @@ img {
 
 #courses .card .content ._descripton {
     max-width: 200px;
+}
+
+#results .container::after{
+    left: 300px  !important;
+    top: -150px !important;   
 }
 
 #results .cards {
@@ -446,7 +463,6 @@ img {
     background: var(--s-offer-content-background);
     padding-top: 50px;
     color: #fff;
-    margin-top: 100px;
     padding-bottom: 100px;
 }
 
@@ -556,16 +572,16 @@ img {
 
 #faq {
     padding-top: 50px;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
 }
 
 #faq .row {
     width: 100%;
-    display: flex;
+    justify-content: space-between;
 }
 
 #faq .row .col {
-    width: 50%;
+    width: 49%;
     padding: 0;
 }
 
@@ -574,9 +590,21 @@ img {
     cursor: pointer;
 }
 
+#faq ul li:first-child {
+    border-radius: 0px 5px 0px 0px;
+}
+
+#faq ul li:last-child {
+    border-radius: 0px 0px 5px 0px;
+}
+
 #faq li>div {
     display: flex;
     justify-content: space-between;
+}
+
+#faq ul {
+    background: #fff;
 }
 
 #faq li span[button].collapse {
@@ -650,7 +678,7 @@ img {
 }
 
 #contact {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 #contact .contact-container {
@@ -685,14 +713,20 @@ img {
     cursor: pointer;
 }
 
+#contact .absolute.img span::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f00d";
+}
+
 #contact .absolute.img, #contact .absolute.img * {
     transition: 1000ms;
 }
 #contact .absolute.img._  {
     right: -70px !important;
 }
-#contact .absolute.img._ span {
-    transform: rotate(45deg)
+#contact .absolute.img._ span::after {
+    content: "\f0e0" !important;
 }
 
 #contact form > div{
@@ -704,6 +738,7 @@ img {
 
 
 #contact .contact-container .col#col{
+    background: #fff;
     width: 60%;
 }
 #contact .contact-container .col {

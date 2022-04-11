@@ -66,6 +66,11 @@ $('#teachers .owl-carousel').owlCarousel({
     },
 })
 function checkSize() {
+    if(window.innerWidth < 1124) {
+        $('header .nav-links').slideUp(100);
+    } else {
+        $('header .nav-links').slideDown(100);
+    }
     if (window.innerWidth < 768) {
         $('.share .hidden').addClass('open')
     } else {
@@ -99,9 +104,6 @@ document.querySelectorAll('dots').forEach(e => {
 });
 $(function(){
     $(document).ready(function () {
-        if(window.innerWidth < 1124) {
-            $('header .nav-links').slideUp(100);
-        }
         $('#faq .hidden').slideUp();
         $('#faq .collapse[button]').click(function(e){
             $(this).parent().parent().children().eq(1).slideToggle(200);
@@ -113,7 +115,7 @@ $(function(){
         })
     })
     $('.burger').click(e => {
-        $('header .nav-links').slideToggle()
+        $('header .nav-links').slideToggle();
     })
     $('#hideform').click(e => {
         $('#contact #col').toggle(1000);

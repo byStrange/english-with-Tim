@@ -16,6 +16,8 @@ body,html {
     width: 90%;
     max-width: 1700px !important;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .img img {
@@ -149,4 +151,20 @@ img {
 
 .absolute.img {
     position: absolute;
+}
+
+:is(.container, main)::after {
+    content: attr(data-background-title);
+    position: absolute;
+    top: -50px;
+    left: -15px;
+    font-size: 212px;
+    color: #1a1a1a;
+    font-weight: bold;
+    z-index: -1;
+    opacity: .05;
+}
+
+section {
+    background: var(--s-main-background)
 }

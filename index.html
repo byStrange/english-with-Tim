@@ -55,7 +55,7 @@
 
     <!-- main -->
     <main>
-        <div .container.center.top>
+        <div .container.center.top data-background-title="english">
             <div .context zIndex="4" position="relative" sm:justify-content:space-between!>
                 <div>
                     <div .text padding="0 20px" marginBottom="30px">
@@ -210,7 +210,7 @@
     <!-- /section #whywe -->
 
     <section #courses>
-        <div .container>
+        <div .container data-background-title="courses">
             <div>
                 <button .btn.sm>
                     <span>Learn english with <span .marked>tim</span></span>
@@ -271,8 +271,8 @@
         </div>
     </section>
 
-    <section #results marginTop="150px">
-        <div .container>
+    <section #results padding="150px 0 100px 0">
+        <div .container data-background-title="results">
             <div marginBottom="50px">
                 <button .btn.sm.light>
                     <span><span .marked>Results</span> of our <span .marked>students</span></span>
@@ -763,73 +763,8 @@
         </div>
     </section>
 
-    <section #contact>
-        <div .container>
-            <div>
-                <button .btn.sm>
-                    <span .marked>Contacts</span>
-                </button>
-            </div>
-            <div .title>
-                <span>Контактные данные</span>
-            </div>
-            <div .contact-container sm:width:100%!>
-                <div .row sm:flex-direction:column!>
-                    <div .col  position='relative'>
-                        <center marginBottom="80px" position="relative"> 
-                            <div .absolute.img left="-70px" top="-20px">
-                                <img src="assets/media/logo/logo-bordered.png" alt="logo" width="100px">
-                            </div>
-                            <div .title>
-                                <span>English with tim</span>
-                            </div>
-                        </center>
-                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом.</span></p>
-                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом</p>
-                        <p><span .fas.fa-phone></span><a href="tel:+998001234567">+998 00 123 45 67</a></p>
-                        <p><span .fas.fa-phone opacity="0"></span><a href="tel:+998776543210">+998 77 654 32 10</a></p>
-                        <p><span .fas.fa-envelope></span><a href="mailto:englishwithtim@gmail.com">englishwithtim@gmail.com</a></p>
-                        <div display="flex" marginTop="20px">
-                            <div .icon><span .fa-brands.fa-telegram></span></div>
-                            <div .icon><span .fa-brands.fa-instagram></span></div>
-                            <div .icon><span .fa-brands.fa-facebook-f></span></div>
-                            <div .icon><span .fa-brands.fa-youtube></span></div>
-                        </div>
-                        <div .absolute.img right="-167.5%" top="0" sm:display:none!>
-                            <div #hideForm>
-                                <span .fas.fa-times fontSize="20px" color="#fff" cursor="pointer"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div .col #col>
-                        <div .title textAlign="center">
-                            <span>Написат нам</span> 
-                        </div>
-                        <form action="#" marginTop="30px">
-                            <div>
-                                <input type="text" placeholder="Ваше имя">
-                                <input type="text" placeholder="Фамилия">
-                            </div>
-                            <div>
-                                <input type="text" placeholder="Номер телефона">
-                                <input type="text" placeholder="Тема">
-                            </div>
-                            <textarea name="" id="" cols="30" rows="5" placeholder="Текст"></textarea>
-                            <div marginTop="70px"> 
-                                <button type="submit" .btn.default display="flex" margin="0 auto">
-                                    <span>Отправить сообщениe</span>
-                                    <span .fas.fa-angle-right></span>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section #gallery>
+    
+    <section #gallery background="#fff" paddingTop="40px">
         <div .container>
             <div>
                 <button .btn.sm background="#28314B" color="#fff">
@@ -925,6 +860,73 @@
             </div>
     </section>
 
+    <section #contact paddingTop="40px">
+        <div .container>
+            <div>
+                <button .btn.sm>
+                    <span .marked>Contacts</span>
+                </button>
+            </div>
+            <div .title>
+                <span>Контактные данные</span>
+            </div>
+            <div .contact-container sm:width:100%!>
+                <div .row sm:flex-direction:column!>
+                    <div .col  position='relative'>
+                        <center marginBottom="80px" position="relative"> 
+                            <div .absolute.img left="-70px" top="-20px">
+                                <img src="assets/media/logo/logo-bordered.png" alt="logo" width="100px">
+                            </div>
+                            <div .title>
+                                <span>English with tim</span>
+                            </div>
+                        </center>
+                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом.</span></p>
+                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом</p>
+                        <p><span .fas.fa-phone></span><a href="tel:+998001234567">+998 00 123 45 67</a></p>
+                        <p><span .fas.fa-phone opacity="0"></span><a href="tel:+998776543210">+998 77 654 32 10</a></p>
+                        <p><span .fas.fa-envelope></span><a href="mailto:englishwithtim@gmail.com">englishwithtim@gmail.com</a></p>
+                        <div display="flex" marginTop="20px">
+                            <div .icon><span .fa-brands.fa-telegram></span></div>
+                            <div .icon><span .fa-brands.fa-instagram></span></div>
+                            <div .icon><span .fa-brands.fa-facebook-f></span></div>
+                            <div .icon><span .fa-brands.fa-youtube></span></div>
+                        </div>
+                        <div .absolute.img right="-167.5%" top="0" sm:display:none!>
+                            <div #hideForm>
+                                <span .fas fontSize="20px" color="#fff" cursor="pointer"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div .col #col>
+                        <div .title textAlign="center">
+                            <span>Написат нам</span> 
+                        </div>
+                        <form action="#" marginTop="30px">
+                            <div>
+                                <input type="text" placeholder="Ваше имя">
+                                <input type="text" placeholder="Фамилия">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Номер телефона">
+                                <input type="text" placeholder="Тема">
+                            </div>
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Текст"></textarea>
+                            <div marginTop="70px"> 
+                                <button type="submit" .btn.default display="flex" margin="0 auto">
+                                    <span>Отправить сообщениe</span>
+                                    <span .fas.fa-angle-right></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- footer -->
     <footer>
         <div .footer-img transform="translateY(11px)">
@@ -935,7 +937,7 @@
                 <div .row display="flex" justifyContent="space-between">
                     <div .col width="250px">
                         <div .logo.img>
-                            <img src="assets/media/logo/logo.png" width="70px" alt="">
+                            <img src="assets/media/logo/Logo-light.png" width="70px" alt="">
                         </div>
                         <p fontSize="18px">С нашим учебным центром вы осуществите свою мечту. Мы поможем вам</p>
                     </div>
