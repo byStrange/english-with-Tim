@@ -7,8 +7,9 @@
     font-family: "Gilroy", sans-serif;
 }
 
-body {
-    overflow-x: hidden
+body,html {
+    overflow-x: hidden;
+    scroll-behavior: smooth
 }
 
 .container {
