@@ -157,3 +157,7 @@ $(document).ready(function () {
         $(this).parent().parent().toggleClass('active');
     })
 })
+
+$('.burger').click(e => {
+    $('header .nav-links').slideToggle()
+})

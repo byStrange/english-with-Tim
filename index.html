@@ -32,7 +32,7 @@
                     <img src="assets/media/logo/logo.png" alt="English with Tim" width="70px">
                 </a>
             </div>
-            <ul .nav-links lg:display:none!>
+            <ul .nav-links>
                 <li><a href="#" .active>Основной</a></li>
                 <li><a href="#">Курсы</a></li>
                 <li><a href="#">Резултаты</a></li>
@@ -42,6 +42,9 @@
                 <li><a href="#">Контакты</a></li>
                 <div #move></div>
             </ul>
+            <div .burger display="none" lg:display:block!>
+                <span .fas.fa-bars></span>
+            </div>
         </div>
     </header>
     <!-- /header -->
@@ -75,8 +78,8 @@
         <div .absolute.img left="0" bottom="-10px" md:display:none!>
             <img src="assets/media/images/header_bottom.png" width="250px">
         </div>
-        <div .absolute.img bottom="0" right="0">
-            <img src="assets/media/images/header_right.png" width="1000px">
+        <div .absolute.img bottom="0" right="0" sm:left:-300px!>
+            <img src="assets/media/images/header_right.png" width="1000px" >
             <div .shadow></div>
         </div>
     </main>
@@ -696,6 +699,40 @@
                             </p>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section #contact>
+        <div .container>
+            <div>
+                <button .btn.sm>
+                    <span .marked>Contacts</span>
+                </button>
+            </div>
+            <div .title>
+                <span>Контактные данные</span>
+            </div>
+            <div .contact-container>
+                <div .row>
+                    <div .col>
+                        <div .center>
+                            <span>English with tim</span>
+                        </div>
+                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом.</span></p>
+                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом</p>
+                        <p><span .fas.fa-phone></span><a href="tel:+998001234567">+998 00 123 45 67</a></p>
+                        <p><span .fas.fa-phone opacity="0"></span><a href="tel:+998776543210">+998 77 654 32 10</a></p>
+                        <p><span .fas.fa-envelope></span><a href="mailto:englishwithtim@gmail.com">englishwithtim@gmail.com</a></p>
+                        <div display="flex">
+                            <div .icon><span .fa-brands.fa-telegram></span></div>
+                            <div .icon><span .fa-brands.fa-instagram></span></div>
+                            <div .icon><span .fa-brands.fa-facebook-f></span></div>
+                            <div .icon><span .fa-brands.fa-youtube></span></div>
+                        </div>
+                    </div>
+                    <div .col></div>
                 </div>
             </div>
         </div>

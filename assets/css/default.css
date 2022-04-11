@@ -38,6 +38,11 @@ img {
     transition: all 350ms;
 }
 
+.burger {
+    cursor: pointer;
+    font-size: 20px;
+}
+
 .text.big {
     font-size: 60px;
 }
