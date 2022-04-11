@@ -76,7 +76,7 @@
             <img src="assets/media/images/header_bottom.png" width="250px">
         </div>
         <div .absolute.img bottom="0" right="0">
-            <img src="assets/media/images/header_right.png" width="1300px">
+            <img src="assets/media/images/header_right.png" width="1000px">
             <div .shadow></div>
         </div>
     </main>
@@ -799,21 +799,21 @@
 
     <!-- footer -->
     <footer>
-        <div .footer-img>
+        <div .footer-img transform="translateY(4px)">
             <img src="assets/media/images/footer.png" width="100%">
         </div>
-        <section #footer>
-            <div .container>
-                <div .row>
-                    <div .col>
+        <section #footer paddingBottom="40px">
+            <div .container borderBottom="1px solid #fff" paddingBottom="50px">
+                <div .row display="flex" justifyContent="space-between">
+                    <div .col width="250px">
                         <div .logo.img>
-                            <img src="assets/media/logo/logo.png" alt="">
+                            <img src="assets/media/logo/logo.png" width="70px" alt="">
                         </div>
-                        <p>С нашим учебным центром вы осуществите свою мечту. Мы поможем вам</p>
+                        <p fontSize="18px">С нашим учебным центром вы осуществите свою мечту. Мы поможем вам</p>
                     </div>
-                    <div .col>
-                        <ul>
-                            <li .title><span>Меню</span> </li>
+                    <div .col display="flex" justifyContent="space-between" width="350px">
+                        <ul marginRight="50px">
+                            <li ._title><span>Меню</span> </li>
                             <li><a href="#">Основной</a></li>
                             <li><a href="#">О нас</a></li>
                             <li><a href="#">Курсы</a></li>
@@ -824,7 +824,7 @@
                             <li><a href="#">Контакты</a></li>
                         </ul>
                         <ul>
-                            <li .title>
+                            <li ._title>
                                 <span>Все курсы</span>
                             </li>
                             <li><a href="#">Beginner</a></li>
@@ -836,12 +836,12 @@
                             <li><a href="#">IELTS 7.5+</a></li>
                         </ul>
                     </div>
-                    <div .col>
-                        <p>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом.</p>
-                        <p>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом.</p>
-                        <p><a href="tel:+998001234567">+998 00 123 45 67</a></p>
-                        <p><a href="tel:+998776543210">+998 77 654 32 10</a></p>
-                        <p><a href="mailto:englishwithtim@gmail.com">englishwithtim@gmail.com</a></p>
+                    <div .col width="400px">
+                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом.</span></p>
+                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом</p>
+                        <p><span .fas.fa-phone></span><a href="tel:+998001234567">+998 00 123 45 67</a></p>
+                        <p><span .fas.fa-phone opacity="0"></span><a href="tel:+998776543210">+998 77 654 32 10</a></p>
+                        <p><span .fas.fa-envelope></span><a href="mailto:englishwithtim@gmail.com">englishwithtim@gmail.com</a></p>
                         <div display="flex">
                             <div .icon><span .fa-brands.fa-telegram></span></div>
                             <div .icon><span .fa-brands.fa-instagram></span></div>
@@ -850,6 +850,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div display="flex" justifyContent="center" marginTop="35px">
+                <span>2022 <a href="#" color="#fff" textDecoration="none">@English with tim</a></span>
             </div>
         </section>
     </footer>
