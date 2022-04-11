@@ -293,7 +293,12 @@ img {
     #gallery .gallery .line {
         display: flex;
     }
-
+    #contact form > div {
+        flex-direction: column;
+    }
+    #contact form > div input{
+        width: 100%;
+    }
     .gallery .row .col {
         height: 140px !important;
         max-width: 200px !important;
