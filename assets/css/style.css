@@ -295,9 +295,11 @@ img {
     }
     #contact form > div {
         flex-direction: column;
+        margin-bottom: 0 !important;
     }
     #contact form > div input{
         width: 100%;
+        margin-bottom: 7px;
     }
     .gallery .row .col {
         height: 140px !important;
