@@ -346,6 +346,9 @@ img {
     #teachers {
         padding: 40px 0 !important;
     }
+    #whywe .cards .card {
+        margin-bottom: 40px !important;
+    }
 }
 
 @media screen and (max-width: 360px) {
