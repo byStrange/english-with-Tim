@@ -171,3 +171,16 @@ $('#hideform').click(e => {
     $('#contact #col').toggle(1000);
     document.querySelectorAll('#contact .absolute.img')[1].classList.toggle('_')
 })
+
+$("#closemodal").click(e =>  {
+    $('.modal-container .modal').hide(1000);
+    setTimeout(() => {
+        $('.modal-container').hide();
+    }, 900)
+})
+
+$("#openmodal").click(e =>  {
+    $('.modal-container').show();
+    $('.modal-container .modal').show(1000);
+})
+

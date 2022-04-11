@@ -131,6 +131,40 @@ main .messages .message p{
     z-index: 1;
 }
 
+.modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-container .modal{
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 500px;
+}
+
+.modal-container .content {
+    padding: 30px;
+}
+.modal-container .content p{
+    margin-bottom: 10px;
+}
+
+.modal-container .content b span{
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 /* main section ends */
 
 
