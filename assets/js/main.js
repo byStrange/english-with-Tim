@@ -172,7 +172,7 @@ $('#hideform').click(e => {
     document.querySelectorAll('#contact .absolute.img')[1].classList.toggle('_')
 })
 
-$('.modal-container .modal').hide();
+$('.modal-container').hide();
 $("#closemodal").click(e =>  {
     $('.modal-container .modal').hide(1000);
     setTimeout(() => {
