@@ -109,20 +109,26 @@ main .absolute.img {
 
 main .messages {
     top: 50%;
+    z-index: 5;
+    overflow: visible;
 }
 
 main .messages .message {
     display: flex;
     align-items: center;
+    position: relative;
 }
-
+main .messages .message img{
+    position: relative;
+    z-index: 2;
+}
 main .messages .message p{
     padding: 5px 20px;
     background: #fff;
     border-radius: 10px;
     margin-left: -10px;
-    z-index: -1;
     position: relative;
+    z-index: 1;
 }
 
 /* main section ends */
