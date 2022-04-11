@@ -148,7 +148,7 @@ document.querySelectorAll('dots').forEach(e => {
 
 $(document).ready(function () {
     if(window.innerWidth < 1124) {
-        $('header .nav-links').slideUp()
+        $('header .nav-links').slideUp(100)
     }
     $('#faq .hidden').slideUp();
     $('#faq .collapse[button]').click(function(e){
