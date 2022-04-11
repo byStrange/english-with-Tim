@@ -33,7 +33,6 @@ $(document).ready(function () {
         center: true,
         margin: 10
     });
-
     $("#results .owl-carousel").owlCarousel({
         center: true,
         items: 2,
@@ -50,7 +49,6 @@ $(document).ready(function () {
         },
     })
 });
-
 $('#teachers .owl-carousel').owlCarousel({
     margin: 40,
     center: true,
@@ -67,10 +65,6 @@ $('#teachers .owl-carousel').owlCarousel({
         }
     },
 })
-
-
-
-
 function checkSize() {
     if (window.innerWidth < 768) {
         $('.share .hidden').addClass('open')
@@ -78,18 +72,13 @@ function checkSize() {
         $('.share .icon:first-child').on('mouseenter', function (e) {
     $(this)[0].parentElement.querySelector('.hidden').classList.add('open')
 })
-
-
 $('.share').on('mouseleave', function (e) {
     $('.share .hidden').removeClass('open')
 })
     }
 }
-
 checkSize()
-
 $(window).on('resize', checkSize)
-
 document.querySelectorAll('dots').forEach(e => {
     var cols = parseInt( e.getAttribute('cols'))
     var rows = e.getAttribute('rows');
@@ -108,80 +97,37 @@ document.querySelectorAll('dots').forEach(e => {
         })
     }   
 });
-
-// (function(){
-//     var pos =  [
-//         {
-//             x: 30,
-//             y: 10
-//         }, 
-//         {
-//             x: 70,
-//             y: 10
-//         },
-//         {
-//             x: 10,
-//             y: 50
-//         },
-//         {
-//             x: 90,
-//             y: 50
-//         },
-//         {
-//             x: 20,
-//             y: 90,
-//         },
-//         {
-//             x: 80,
-//             y: 90
-//         }
-//     ]
-//     var target = document.querySelectorAll('#about-us .absolute.img');
-//     console.log(target)
-//     target.forEach( (t, n) => {
-//         t.css({
-//             top: pos[n].y + '%',
-//             left: pos[n].x + '%'
-//         })
-//     })
-// })()
-
-$(document).ready(function () {
-    if(window.innerWidth < 1124) {
-        $('header .nav-links').slideUp(100)
-    }
-    $('#faq .hidden').slideUp();
-    $('#faq .collapse[button]').click(function(e){
-        $(this).parent().parent().children().eq(1).slideToggle(200);
-        $(this).parent().parent().toggleClass('active');
+$(function(){
+    $(document).ready(function () {
+        if(window.innerWidth < 1124) {
+            $('header .nav-links').slideUp(100)
+        }
+        $('#faq .hidden').slideUp();
+        $('#faq .collapse[button]').click(function(e){
+            $(this).parent().parent().children().eq(1).slideToggle(200);
+            $(this).parent().parent().toggleClass('active');
+        })
+        $('#faq li:not(.active) .question').click(function(e){
+            $(this).parent().parent().children().eq(1).slideToggle(200);
+            $(this).parent().parent().toggleClass('active');
+        })
     })
-    $('#faq li:not(.active) .question').click(function(e){
-        $(this).parent().parent().children().eq(1).slideToggle(200);
-        $(this).parent().parent().toggleClass('active');
+    $('.burger').click(e => {
+        $('header .nav-links').slideToggle()
+    })
+    $('#hideform').click(e => {
+        $('#contact #col').toggle(1000);
+        document.querySelectorAll('#contact .absolute.img')[1].classList.toggle('_')
+    })
+    $('.modal-container').hide();
+    $("#closemodal").click(e =>  {
+        $('.modal-container .modal').hide(1000);
+        setTimeout(() => {
+            $('.modal-container').hide();
+        }, 900)
+    })
+    $("#openmodal").click(e =>  {
+        $('.modal-container').show();
+        $('.modal-container .modal').show(1000);
     })
 })
-
-
-
-$('.burger').click(e => {
-    $('header .nav-links').slideToggle()
-})
-
-$('#hideform').click(e => {
-    $('#contact #col').toggle(1000);
-    document.querySelectorAll('#contact .absolute.img')[1].classList.toggle('_')
-})
-
-$('.modal-container').hide();
-$("#closemodal").click(e =>  {
-    $('.modal-container .modal').hide(1000);
-    setTimeout(() => {
-        $('.modal-container').hide();
-    }, 900)
-})
-
-$("#openmodal").click(e =>  {
-    $('.modal-container').show();
-    $('.modal-container .modal').show(1000);
-})
-
