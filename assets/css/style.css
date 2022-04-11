@@ -274,7 +274,7 @@ img {
         flex-direction: column;
         left: 0 !important;
         z-index: 15;
-        background: var(--s-main-background)
+        background: #F7F7F7;
     }
 
     header .nav-links li:hover a {
