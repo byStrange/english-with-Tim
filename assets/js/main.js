@@ -147,6 +147,9 @@ document.querySelectorAll('dots').forEach(e => {
 // })()
 
 $(document).ready(function () {
+    if(window.innerWidth < 1124) {
+        $('header .nav-links').slideUp()
+    }
     $('#faq .hidden').slideUp();
     $('#faq .collapse[button]').click(function(e){
         $(this).parent().parent().children().eq(1).slideToggle(200);
@@ -157,6 +160,8 @@ $(document).ready(function () {
         $(this).parent().parent().toggleClass('active');
     })
 })
+
+
 
 $('.burger').click(e => {
     $('header .nav-links').slideToggle()
