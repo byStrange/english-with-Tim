@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Shop Admin</title>
 </head>
+
 <body>
-    
-    <div .left-panel display="inline-block" >
+
+    <div .left-panel height="100vh">
         <div .toggle-panel>
             <div .logo>
-                <a href="index.html">Admin</a>
+                <a href="index.html">Админ</a>
             </div>
             <div .toggler>
                 <div .toggler-icon>
@@ -24,17 +26,17 @@
         </div>
         <div .link-list>
             <ul .list>
-                <li .item icon="panel"><a href="index.html">Bosh panel</a></li>
-                <li .item icon="shop"><a href="#">Do'kon</a></li>
-                <li .item.active icon="products"><a href="products.html">Mahsulotlar</a></li>
-                <li .item icon="category"><a href="categories.html">Kategoriyalar</a></li>
-                <li .item icon="messagebox"><a href="emails.html">Habarlar</a></li>
-                <li .item icon="clients"><a href="customers.html">Mijozlar</a></li>
-                <li .item icon="location"><a href="#">Joylashuvlar</a></li>
-                <li .item icon="settings"><a href="#">Sozlamalar</a></li>
+                <li .item icon="panel"><a href="index.html">Главная</a></li>
+                <li .item icon="course"><a href="courses.html">Курсы</a></li>
+                <li .item icon="teacher"><a href="teachers.html">Учитель</a></li>
+                <li .item.active icon="faq"><a href="faq.html">ЧАВО</a></li>
+                <li .item icon="gallery"><a href="gallery.html">Галерея</a></li>
+                <li .item icon="sms"><a href="sms.html">СМС</a></li>
+                <li .item icon="settings"><a href="settings.html">Настройка</a></li>
             </ul>
         </div>
     </div>
+
 
     <div main .container.open display="inline-block">
         <header>
@@ -55,11 +57,29 @@
                 </div>
             </div>
         </header>
-       <div .container>
-           
-       </div>
+
+        <div .container.gallery>
+            <div .row sm:flex-direction:column!>
+                
+                <!-- gallery Item -->
+                <div .col>
+                    <img src="../assets/media/images/gallery/image-10.png">
+                </div>
+                <!-- /gallery Item -->
+
+            </div>
+        </div>
+        <div .container display="flex">
+            <div margin="10% auto">
+                <button .btn.padding>
+                    <span>Add photo</span>
+                </button>
+            </div>
+        </div>
     </div>
+
     <script src="assets/js/core.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

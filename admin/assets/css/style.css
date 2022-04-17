@@ -3,6 +3,8 @@
 @import url('root.css');
 @import url('../fonts/css/all.css');
 @import url('icons.css');
+@import url('https://gists.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css');
+
 
 body {
     max-width: 1900px;
@@ -366,6 +368,8 @@ form input, form select {
     /* height: 500px; */
 }
 
+
+
 img {
     transition: all 350ms;
 }
@@ -403,4 +407,81 @@ img {
 
 .btn {
     background: #FF6A00;
+}
+
+.row>.card {
+    max-width: 600px !important;
+    padding: 20px 20px 40px 20px;
+    margin-bottom: 40px !important;
+}
+
+.row>.card .top {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.row>.card .content {
+    width: auto;
+    margin-left: 20px
+}
+
+.row>.card ul li:not(:first-child) {
+    margin-left: 40px;
+}
+
+.row .card li a {
+    color: #000;
+}
+
+.faqs .faq {
+    max-width: 600px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.faqs .faq .faq-question {
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 17px 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.faqs .faq .faq-answer {
+    padding: 20px 20px 28px 20px;
+    font-size: 17px;
+}
+
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery .col:hover img{
+    transform: scale(1.2)
+}
+
+.gallery .row .col {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.gallery .row .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 350ms;
+}
+
+.gallery .row .col:hover img{
+    transform: scale(1.2)
 }

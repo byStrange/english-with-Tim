@@ -4,7 +4,7 @@
     --t-header-height: 100px;
     --t-left-panel-default-width: 250px;
     --t-left-panel-bg-color: #323641;
-    --t-font-family: "Poppins", 'Roboto', sans-serif;
+    --t-font-family: "Gilroy", 'Roboto', sans-serif;
 }
 
 *{
@@ -14,6 +14,12 @@
     font-family: var(--t-font-family);
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 body {
     display: flex;
@@ -51,4 +57,19 @@ body {
 
 li {
     list-style: none;
+}
+
+[main].container {
+    height: 100vh;
+    overflow: auto;
+    background: #F4F4F4;
+}
+
+[main].container > .container {
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+b {
+    font-size: 20px;
 }
