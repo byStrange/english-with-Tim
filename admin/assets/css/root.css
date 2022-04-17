@@ -12,6 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--t-font-family);
+    transition: all 170ms;
 }
 
 .row {
@@ -19,6 +20,15 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+.link {
+    color: #FF6A00;
+    text-decoration: underline;
 }
 
 body {
@@ -72,4 +82,21 @@ li {
 
 b {
     font-size: 20px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+.line.start {
+    justify-content: flex-start;
+}
+
+.line.end {
+    justify-content: flex-end;
+}
+
+.line.center {
+    justify-content: center;
 }

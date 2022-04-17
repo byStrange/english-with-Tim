@@ -1,7 +1,8 @@
-.left-panel .list li{
+.left-panel .list li, li.item{
     position: relative;
+    display: flex;
 }
-.left-panel .list li:before {
+.left-panel .list li:before, [ionic] li:before {
     content: '';
     width: 30px;
     height: 30px;

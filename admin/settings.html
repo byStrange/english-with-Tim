@@ -25,14 +25,14 @@
             </div>
         </div>
         <div .link-list>
-            <ul .list>
+            <ul .list ionic>
                 <li .item icon="panel"><a href="index.html">Главная</a></li>
                 <li .item icon="course"><a href="courses.html">Курсы</a></li>
                 <li .item icon="teacher"><a href="teachers.html">Учитель</a></li>
                 <li .item.active icon="faq"><a href="faq.html">ЧАВО</a></li>
                 <li .item icon="gallery"><a href="gallery.html">Галерея</a></li>
                 <li .item icon="sms"><a href="sms.html">СМС</a></li>
-                <li .item icon="settings"><a href="settings.html">Настройка</a></li>
+                <li .item.active icon="settings"><a href="settings.html">Настройка</a></li>
             </ul>
         </div>
     </div>
@@ -56,59 +56,49 @@
                 </div>
             </div>
         </header>
-        <div .line-control width="100%" display="flex" justifyContent="space-between" padding="0 100px"
-            alignItems="center" marginTop="30px">
-            <div name>
-                Sozlamalar
-            </div>
-        </div>
-        <div .container marginLeft="100px" height="75%" overflow="auto">
-            <div .edit-panel>
-                <p>
-                    Shaxsiy ma'lumotlar
-                </p>
-                <div ._user display="flex" alignItems="center" margin="35px 0">
-                    <div marginRight="40px" .profile-img width="100px" height="100px" overflow="hidden"
-                        outlineOffset="2px" outline="1px solid gray" borderRadius="50%">
-                        <img src="//picsum.photos/100" alt="user-image">
-                    </div>
-                    <div .name>
-                        <p fontWeight=bold>Stephen N.Arellano</p>
-                        <p>
-                            <span>User ID : 54165419812</span>
-                        </p>
-                    </div>
+        <div .container>
+            <div .settings-menu>
+                <div .title>
+                    <span>English with tim</span>
                 </div>
-                <form action="#!" method="POST">
-                    <div .row>
-                        <label for="id">Foydalanuvchi ID</label>
-                        <input type="text" id="id" value="54165419812">
-                    </div>
-                    <div .row>
-                        <label for="name">Ismi</label>
-                        <input type="text" id="name" value="Stephano">
-                    </div>
-                    <div .row>
-                        <label for="sname">Familiya</label>
-                        <input type="text" id="sname" value="Arellano">
-                    </div>
-                    <div .row>
-                        <label for="phone_number">Tel raqami</label>
-                        <input type="text" id="phone_number" value="+1 5645 654656">
-                    </div>
-                    <div .row>
-                        <label for="email">Pochta</label>
-                        <input type="email" id="email" value="stephanarellano@gmail.com">
-                    </div>
-                    <div .row display:block>
-                        <button .padding background="#FF6A00">
-                            <span>O'zgartirish</span>
+
+                <div .content>
+                    <ul>
+                        <li .item>
+                            <span .fas.fa-location-dot></span>
+                            <div>
+                                <p>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом.</p>
+                                <p>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом.</p>
+                            </div>
+                        </li>
+                        <li .item>
+                            <span .fas.fa-phone></span>
+                            <div>
+                                <p>+998912341234</p>
+                                <p>+998912341234</p>
+                            </div>
+                        </li>
+                        <li .item>
+                            <span .fas.fa-envelope></span>
+                            <p>englishwithtim@gmail.com</p>
+                        </li>
+                    </ul>
+                    <ul ionic>
+                        <li><a href="#"><i .fa-brands.fa-instagram></i></a></li>
+                        <li><a href=""><i .fa-brands.fa-youtube></i></a></li>
+                        <li><a href=""><i .fa-brands.fa-facebook></i></a></li>
+                        <li><a href=""><i .fa-brands.fa-telegram></i></a></li>
+                    </ul>
+                    
+                    <div margin="25px 0">
+                        <button .padding.btn width="200px">
+                            <span>Edit</span>
                         </button>
                     </div>
-                </form>
+
+                </div>
             </div>
         </div>
-
     </div>
     <script src="assets/js/core.js"></script>
     <script src="assets/js/main.js"></script>

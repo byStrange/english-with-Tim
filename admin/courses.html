@@ -27,11 +27,11 @@
             </div>
         </div>
         <div .link-list>
-            <ul .list>
+            <ul .list ionic>
                 <li .item icon="panel"><a href="index.html">Главная</a></li>
-                <li .item icon="course"><a href="courses.html">Курсы</a></li>
+                <li .item.active icon="course"><a href="courses.html">Курсы</a></li>
                 <li .item icon="teacher"><a href="teachers.html">Учитель</a></li>
-                <li .item.active icon="faq"><a href="faq.html">ЧАВО</a></li>
+                <li .item icon="faq"><a href="faq.html">ЧАВО</a></li>
                 <li .item icon="gallery"><a href="gallery.html">Галерея</a></li>
                 <li .item icon="sms"><a href="sms.html">СМС</a></li>
                 <li .item icon="settings"><a href="settings.html">Настройка</a></li>
@@ -58,11 +58,22 @@
                 </div>
             </div>
         </header>
+        <div .end.line display="flex" justifyContent="flex-end" padding="20px 20px">
+            <a .link href="#" #edit>
+                Edit 
+            </a>
+            <div .icon #edit>
+                <span .fas.fa-pen></span> 
+            </div>
+        </div>
         <div .container marginLeft="50px">
             <div .cards.owl-carousel.owl-theme>
                 <div .card>
                     <div .img.top.header>
                         <img src="assets/images/courses/course-1.png" alt="course_1">
+                       <div .icon>
+                            <span .fas.fa-trash></span>
+                       </div>
                     </div>
                     <div .content>
                         <div ._title>
@@ -76,6 +87,9 @@
                 <div .card>
                     <div .img.top.header>
                         <img src="assets/images/courses/course-2.png" alt="course_1">
+                        <div .icon>
+                            <span .fas.fa-trash></span>
+                       </div>
                     </div>
                     <div .content>
                         <div ._title>
@@ -89,6 +103,9 @@
                 <div .card>
                     <div .img.top.header>
                         <img src="assets/images/courses/course-3.png" alt="course_1">
+                        <div .icon>
+                            <span .fas.fa-trash></span>
+                       </div>
                     </div>
                     <div .content>
                         <div ._title>
@@ -99,11 +116,11 @@
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>
             <div .container display="flex">
                 <div margin="10% auto">
                     <button .btn.padding>
-                        <span>Добавить курс</span>
+                        <span>Add course</span>
                     </button>
                 </div>
             </div>
@@ -114,6 +131,29 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/core.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $(".owl-carousel").owlCarousel({
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                1000: {
+                    items: 3,
+                }
+            },
+            reponsiveClass: true,
+            autoplayHoverPause: false,
+            autoplay: false,
+            smartSpeed: 1000,
+            dots: true,
+            center: true,
+            margin: 10
+        });
+        $('#edit').on('click', function () {
+            $('.card').toggleClass('onDelete')
+        })
+    </script>
 </body>
 
 </html>

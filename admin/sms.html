@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Shop Admin</title>
 </head>
@@ -31,7 +32,7 @@
                 <li .item icon="teacher"><a href="teachers.html">Учитель</a></li>
                 <li .item.active icon="faq"><a href="faq.html">ЧАВО</a></li>
                 <li .item icon="gallery"><a href="gallery.html">Галерея</a></li>
-                <li .item icon="sms"><a href="sms.html">СМС</a></li>
+                <li .item.active icon="sms"><a href="sms.html">СМС</a></li>
                 <li .item icon="settings"><a href="settings.html">Настройка</a></li>
             </ul>
         </div>
@@ -56,44 +57,46 @@
                 </div>
             </div>
         </header>
-        <div .end.line padding="20px 20px">
-            <a .link href="#" #edit>
-                Edit
-            </a>
-            <div .icon #edit>
-                <span .fas.fa-pen></span>
-            </div>
-        </div>
-        <div .container>
-            <div .faqs>
+        
+        <div .container marginTop="20px">   
+            <h1 marginTop="30px">
+                СМС
+            </h1>
+            <div .messages position="relative">
                 <div .row>
-
-                    <!-- FAQ item -->
-                    <div .faq>
-                        <div .faq-question>
-                            <span>Какой метод обучения используется в Tim?</span>
+                    <div .sms>
+                        <div .top>
+                            <div .img width="60px" borderRadius="50%" overflow="hidden">
+                                <img src="assets/images/user.png" alt="user" >
+                            </div>
+                            <div>
+                                <p>
+                                    <b>User ID:</b> <span>1546515641</span>
+                                </p>
+                            </div>
                         </div>
-                        <div .faq-answer>
-                            <span>Студенты Tim проходят обучение на основе коммуникативного метода обучения. Это
-                                означает, что работа на занятиях строится на основе практических ситуаций общения,
-                                которые могут возникнуть в повседневной жизни. При этом отрабатываются четыре основных
-                                языковых навыка: чтение, письмо, аудирование и устная речь. Все упражнения на уроках
-                                отражают реальные ситуации и составлены таким образом, чтобы студенты как можно больше
-                                общались.</span>
+                        <div .bottom>
+                            <p>Diam gravida nullam elementum ultricies nunc quam. Lectus malesuada interdum mi iaculis accumsan. Consequat, nisi mi leo molestie ut. Commodo tortor integer lorem elit sollicitudin maecenas malesuada et tempus. Leo pretium, ut tincidunt a purus sapien. Fringilla nunc, eget lacus metus nulla sit. Cras aliquet eu, pellentesque ipsum eget sed. Nisl, tortor suspendisse sit neque gravida venenatis, amet, ac lectus.</p>
+                        </div>
+                        <div .footer>
+                            <div>
+                                <span>
+                                    Time: 
+                                </span>
+                                <span>
+                                    15.03.2022  17:11
+                                </span>
+                            </div>
+                            <div edit>
+                                <span .fas.fa-edit></span>
+                                <span .fas.fa-trash onclick="_delete(this)"></span>
+                            </div>
                         </div>
                     </div>
-                    <!-- /FAQ item -->
-
-                </div>
-            </div>
-            <div .container display="flex">
-                <div margin="10% auto">
-                    <button .btn.padding>
-                        <span>Add FAQ</span>
-                    </button>
                 </div>
             </div>
         </div>
+        
     </div>
     <script src="assets/js/core.js"></script>
     <script src="assets/js/main.js"></script>
