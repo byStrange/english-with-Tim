@@ -249,64 +249,6 @@ table button, button {
     padding: 10px 20px;
 }
 
-table button {
-    width: 130px;
-    background: #62BFC4;
-}
-
-table button[action='successed'] {
-    background: #009430;
-}
-
-table button[action='pending'] {
-    background: #017B8B;
-}
-
-table:not(.no-center) tr td:nth-child(6) {
-    text-align: center;
-}
-
-table tr:not(:last-child) {
-    margin-bottom: 10px !important;
-}
-
-table {
-    border-collapse: collapse;
-    overflow: auto;
-    width: 100%;
-}
-
-tr {
-    border: none;
-}
-
-tr:not(:first-child) {
-    border-bottom: 1px solid black;
-}
-
-tr:hover {
-    background: rgba(0, 0, 0, 0.1)
-}
-
-table[theme='blue'] button {
-    background: #4144E7;
-}
-
-table[theme='greeny'] button:not([action=not-active]) {
-    background: #009430;
-}
-
-table[theme='greeny'] button[action=not-active] {
-    background: #FF6A00 !important;
-}
-
-table th {
-    font-size: 18px;
-}
-
-.message {
-    margin-bottom: 40px;
-}
 
 .container::-webkit-scrollbar {
     height: 4px;
@@ -334,20 +276,6 @@ span[action] {
     width: 100%;
 }
 
-span[action]:not(:last-child) {
-    margin-right: 10px;
-}
-
-form .row {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-form .row:not(:last-child) {
-    margin-bottom: 18px;
-}
-
 ::-webkit-scrollbar-thumb {
     background: rgba(128, 128, 128, 0.4);
     border-radius: 20px;
@@ -364,10 +292,7 @@ form .row:not(:last-child) {
     height: 5px;
 }
 
-form .row label {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
+
 
 form input, form select {
     padding: 12px 15px;
@@ -376,25 +301,6 @@ form input, form select {
     border-radius: 10px;
 }
 
-.modal {
-    display: block;
-    position: absolute;
-    background: #Fff;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 700px;
-    padding: 30px;
-    border-radius: 10px;
-    height: 90%;
-    z-index: 5;
-    box-shadow:  0 0 30px rgba(0,0,0,0.5);
-}
-
-
-.modal.hide {
-    display: none;
-}
 
 @media screen and (max-width: 776px) {
     body {
@@ -444,13 +350,57 @@ form input, form select {
     }
 }
 
-
-/* for fixed header */
-/* 
-.container header {
-    position: fixed;
+.cards .card {
+    max-width: 400px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 !important;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    /* height: 500px; */
 }
 
-header ~ .line-control {
-    margin-top: 130px;
-}  */
+img {
+    transition: all 350ms;
+}
+
+.cards .card:hover .img.top.header img {
+    transform: scale(1.1);
+}
+
+.card ._title {
+    font-size: 27px;
+    font-weight: bold;
+    position: relative;
+}
+
+.card ._title::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background: #FF6A00;
+}
+
+.cards .content {
+    margin-top: 20px;
+    width: 90%;
+    float: right;
+    margin-top: 20px;
+}
+
+.card .content ._descripton {
+    max-width: 200px;
+}
+
+.btn {
+    background: #FF6A00;
+}

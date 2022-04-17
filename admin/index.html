@@ -12,7 +12,6 @@
 <body>
 
     <div .left-panel display="inline-block" height="100vh">
-
         <div .toggle-panel>
             <div .logo>
                 <a href="index.html">Админ</a>
@@ -28,7 +27,7 @@
         <div .link-list>
             <ul .list>
                 <li .item.active icon="panel"><a href="index.html">Главная</a></li>
-                <li .item icon="course"><a href="#">Курсы</a></li>
+                <li .item icon="course"><a href="courses.html">Курсы</a></li>
                 <li .item icon="teacher"><a href="products.html">Учитель</a></li>
                 <li .item icon="faq"><a href="categories.html">ЧАВО</a></li>
                 <li .item icon="gallery"><a href="emails.html">Галерея</a></li>
@@ -58,9 +57,9 @@
             </div>
         </header>
 
-        <div .container marginLeft="50px">
-            <div .mini-cards sm:justify-content:center!>
-                <div .cardy>
+        <div .container marginLeft="50px" display="flex" justifyContent="center">
+            <div .mini-cards maxWidth="1000px" sm:justify-content:center!>
+                <div .cardy >
                     <div .card-icon>
                         <img src="assets/images/icons/profile.svg">
                     </div>

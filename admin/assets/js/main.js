@@ -31,15 +31,33 @@
     })
 })()
 
-;(function () {
-    const modal = {
-        self: document.querySelector('.modal'),
-        closer: document.querySelector('#openModal'),
-        opener: document.querySelector('#closeModal')
-    }
-    modal.opener.addEventListener('click', function () {
-        modal.self.classList.add('hide');
-    })
-    modal.closer.addEventListener('click', function () {
-        modal.self.classList.remove('hide');})
-})();
+// ;(function () {
+//     const modal = {
+//         self: document.querySelector('.modal'),
+//         closer: document.querySelector('#openModal'),
+//         opener: document.querySelector('#closeModal')
+//     }
+//     modal.opener.addEventListener('click', function () {
+//         modal.self.classList.add('hide');
+//     })
+//     modal.closer.addEventListener('click', function () {
+//         modal.self.classList.remove('hide');})
+// })();
+
+$(".owl-carousel").owlCarousel({
+    responsive: {
+        0: {
+            items: 1,
+        },
+        1000: {
+            items: 3,
+        }
+    },
+    reponsiveClass: true,
+    autoplayHoverPause: false,
+    autoplay: false,
+    smartSpeed: 1000,
+    dots: true,
+    center: true,
+    margin: 10
+});
