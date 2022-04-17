@@ -9,18 +9,16 @@ body {
 }
 
 .left-panel {
-    /* width: var(--t-left-panel-default-width); */
+    width: var(--t-left-panel-default-width);
     height: 100vh;
     transition: 500ms;
     background-color: var(--t-left-panel-bg-color);
+    min-width: 300px;
 }
 
 .left-panel.collapsed {
-    width: 5%;
-}
-
-[main].container.active {
-    width: 95%;
+    width: 40px;
+    min-width: 40px;
 }
 
 .left-panel.collapsed>.link-list {
@@ -65,14 +63,11 @@ body {
 
 
 body>.container {
-    width: 86%;
-    /* width: calc(100% - var(--t-left-panel-default-width)); */
+    /* width: 86%; */
+    width: 100%;
     height: 100vh;
 }
 
-body>.container.open {
-    width: calc(100% - 5%) !important;
-}
 
 .container header {
     width: 100%;
@@ -209,26 +204,15 @@ body>.container.open {
 .mini-cards .cardy {
     width: 200px;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
     max-width: 250px;
-    height: 85px;
     border-radius: 10px;
     background: #62BFC4;
     color: #fff;
-    padding: 20px 0 15px 65px;  
     margin-bottom: 35px;
     margin-top: 50px;
     position: relative;
-}
-
-.mini-cards .cardy .card-icon {
-    position: absolute;
-    left: 20px;
-    font-size: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: "Font Awesome 6 Free";
 }
 
 .cardy .count {
@@ -238,6 +222,7 @@ body>.container.open {
 .cardy .title {
     font-weight: 400;
     opacity: .9;
+    font-size: 20px;
 }
 
 .container {
@@ -324,8 +309,7 @@ table th {
 }
 
 .container::-webkit-scrollbar {
-    width: 5px;
-    height: 10px;
+    height: 4px;
 }
 
 /* create a  simple scrollbar */
@@ -365,7 +349,7 @@ form .row:not(:last-child) {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(128, 128, 128, 0.548);
+    background: rgba(128, 128, 128, 0.4);
     border-radius: 20px;
 }
 
@@ -377,8 +361,7 @@ form .row:not(:last-child) {
 
 ::-webkit-scrollbar {
     border-radius: 20px;
-    overflow: hidden;
-    width: 5px;
+    height: 5px;
 }
 
 form .row label {
