@@ -91,18 +91,46 @@
             </div>
             <div .container display="flex">
                 <div margin="10% auto">
-                    <button .btn.padding>
+                    <button .btn.padding #open>
                         <span>Add FAQ</span>
                     </button>
                 </div>
             </div>
         </div>
     </div>
+
+    <div .modal>
+        <div .box>
+            <div  .title position="relative">
+                <span>FAQ</span>
+                <div position="absolute" right="0" top="0" type="button">
+                    <span .fas.fa-times #hide></span>
+                </div>
+            </div>
+            <form action="">
+                <div>
+                    <label for="question">Question</label>
+                    <input type="text" id="question" name="name" placeholder="Type name....">
+                </div>
+                <div>
+                    <label for="ans">Answer</label>
+                    <input type="text" id="ans" name="name" placeholder="Type name....">
+                </div>
+                <div>
+                    <div>
+                        <input type="submit" value="Add FAQ" .padding.btn>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/core.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/jquery.js"></script>
     <script>
         $('#edit').click(function() {
+            if ($('#edit').text()=='cancel')  $('#edit').text('edit')
+            else $('#edit').text('cancel')
             $('.faqs .faq').toggleClass('onDelete');
         });
     </script>

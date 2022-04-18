@@ -248,7 +248,7 @@ table button, button {
 }
 
 .padding {
-    padding: 10px 20px;
+    padding: 10px 24px;
 }
 
 .edit-panel {
@@ -283,7 +283,7 @@ span[action] {
     width: 10px;
 }
 
-form input, form select {
+form input, form select, form  textarea {
     padding: 12px 15px;
     border: 2px solid #6B6D73;
     box-sizing: border-box;
@@ -325,9 +325,6 @@ form input, form select {
         margin-top: 30px !important;
     }
 
-    .modal {
-        top: 45%;
-    }
 
     [main].container>div {
         margin-left: 10px !important;
@@ -474,6 +471,9 @@ img {
 
 .btn {
     background: #FF6A00;
+    cursor: pointer;
+    border: none;
+    color: #fff;
 }
 
 .row>.card {
@@ -688,4 +688,51 @@ img {
     border-radius: 50%;
     color: #fff;
     background: #000;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.5);
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+
+.modal .box .title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal .box {
+    background :#fff;
+    max-width: 650px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    width: 600px;
+    min-width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal .box form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .box form > div {
+    margin: 20px 0 ;
+}
+
+.modal .box form label{
+    font-size: 18px;
+    margin-bottom: 5px;
 }

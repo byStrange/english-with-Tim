@@ -81,18 +81,42 @@
         </div>
         <div .container display="flex">
             <div margin="10% auto">
-                <button .btn.padding>
+                <button .btn.padding #open>
                     <span>Add photo</span>
                 </button>
             </div>
         </div>
     </div>
 
+    <div .modal>
+        <div .box>
+            <div  .title position="relative">
+                <span>FAQ</span>
+                <div position="absolute" right="0" top="0" type="button">
+                    <span .fas.fa-times #hide></span>
+                </div>
+            </div>
+            <form action="">
+                <div>
+                    <label for="image">Choose image  main (format: jpg, jpeg, png) </label>
+                    <input type="file" id="image" name="name" accept="" placeholder="Type name....">
+                </div>
+                <div>
+                    <div>
+                        <input type="submit" value="Add photo" .padding.btn>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/core.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/jquery.js"></script>
     <script>
         $('#edit').click(function() {
+            if ($('#edit').text()=='cancel')  $('#edit').text('edit')
+            else $('#edit').text('cancel')
             $('.gallery .col').toggleClass('onDelete');
         });
     </script>

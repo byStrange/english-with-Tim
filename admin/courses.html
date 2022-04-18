@@ -60,10 +60,10 @@
         </header>
         <div .end.line display="flex" justifyContent="flex-end" padding="20px 20px">
             <a .link href="#" #edit>
-                Edit 
+                Edit
             </a>
             <div .icon #edit>
-                <span .fas.fa-pen></span> 
+                <span .fas.fa-pen></span>
             </div>
         </div>
         <div .container marginLeft="50px">
@@ -71,9 +71,9 @@
                 <div .card>
                     <div .img.top.header>
                         <img src="assets/images/courses/course-1.png" alt="course_1">
-                       <div .icon>
+                        <div .icon>
                             <span .fas.fa-trash></span>
-                       </div>
+                        </div>
                     </div>
                     <div .content>
                         <div ._title>
@@ -89,7 +89,7 @@
                         <img src="assets/images/courses/course-2.png" alt="course_1">
                         <div .icon>
                             <span .fas.fa-trash></span>
-                       </div>
+                        </div>
                     </div>
                     <div .content>
                         <div ._title>
@@ -105,7 +105,7 @@
                         <img src="assets/images/courses/course-3.png" alt="course_1">
                         <div .icon>
                             <span .fas.fa-trash></span>
-                       </div>
+                        </div>
                     </div>
                     <div .content>
                         <div ._title>
@@ -119,13 +119,49 @@
             </div>
             <div .container display="flex">
                 <div margin="10% auto">
-                    <button .btn.padding>
+                    <button .btn.padding #open>
                         <span>Add course</span>
                     </button>
                 </div>
             </div>
         </div>
-
+    </div>
+    <div .modal>
+        <div .box>
+            <div  .title position="relative">
+                <span>Add course</span>
+                <div position="absolute" right="0" top="0" type="button">
+                    <span .fas.fa-times #hide></span>
+                </div>
+            </div>
+            <form action="">
+                <div>
+                    <label for="name">Course name</label>
+                    <input type="text" id="name" name="name" placeholder="Type name....">
+                </div>
+                <div>
+                    <label for="desc">Description</label>
+                    <input type="text" name="desc" id="desc" placeholder="Type descripton...">
+                </div>
+                <div>
+                    <label for="about">About course</label>
+                    <textarea cols="30" rows="10" placeholder="About"></textarea>
+                </div>
+                <div>
+                    <label for="contact">Contact</label>
+                    <input type="text" placeholder="Contact">
+                </div>
+                <div>
+                    <label for="source">Choose image main (format: jpg, jpeg, png) </label>
+                    <input type="file" accept="">
+                </div>
+                <div>
+                    <div>
+                        <input type="submit" value="Add course" .padding.btn>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
@@ -151,6 +187,8 @@
             margin: 10
         });
         $('#edit').on('click', function () {
+            if ($('#edit').text()=='cancel')  $('#edit').text('edit')
+            else $('#edit').text('cancel')
             $('.card').toggleClass('onDelete')
         })
     </script>

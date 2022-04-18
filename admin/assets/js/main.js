@@ -31,19 +31,28 @@ var no_emojis = ['\(^Д^)/', '(^_^)b', '(^-^*)', '\(o_o)/', '(o^^)o', "(='X'=)",
             }, 500)
         })
     })()
-;
-// ;(function () {
-//     const modal = {
-//         self: document.querySelector('.modal'),
-//         closer: document.querySelector('#openModal'),
-//         opener: document.querySelector('#closeModal')
-//     }
-//     modal.opener.addEventListener('click', function () {
-//         modal.self.classList.add('hide');
-//     })
-//     modal.closer.addEventListener('click', function () {
-//         modal.self.classList.remove('hide');})
-// })();
+    ;
+; (function () {
+    const modal = {
+        self: document.querySelector('.modal'),
+        opener: document.querySelector('#open'),
+        closer: document.querySelector('#hide')
+    }
+    $('.modal .box').hide(500);
+    console.log(modal)
+    if (modal.self && modal.opener && modal.closer) {
+        modal.opener.addEventListener('click', function () {
+            $('.modal').show();
+            $('.modal .box').show(500);
+        })
+        modal.closer.addEventListener('click', function () {
+            $('.modal .box').hide(500);
+            setTimeout(() => {
+                $('.modal').hide();
+            }, 500)
+        })
+    }
+})();
 
 
 function _delete(el) {
