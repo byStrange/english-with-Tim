@@ -60,7 +60,8 @@ $('#teachers .owl-carousel').owlCarousel({
             items: 2,
         },
         1300: {
-            items: 3
+            items: 2,
+            center: true
         },
         1600: {
             items: 3
