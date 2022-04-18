@@ -356,6 +356,10 @@ img {
     margin-bottom: 10px;
 }
 
+#teachers .card {
+    width: 300px;
+}
+
 #teachers .cards :not(.name) {
     font-size: 20px;
 }
