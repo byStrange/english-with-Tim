@@ -750,6 +750,9 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+    main > .container::after {
+        top: 0 !important;
+    }
     #gallery .gallery .line {
         display: flex;
     }
