@@ -61,7 +61,6 @@ $('#teachers .owl-carousel').owlCarousel({
         },
         1300: {
             items: 2,
-            center: true
         },
         1600: {
             items: 3
