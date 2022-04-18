@@ -120,6 +120,10 @@ $(function(){
         $('#contact #col').toggle(1000);
         document.querySelectorAll('#contact .absolute.img')[1].classList.toggle('_')
     })
+    $("#openmodal").click(e =>  {
+        $('.modal-container').show();
+        $('.modal-container .modal').show(1000);
+    })
     $('.modal-container').hide();
     $("#closemodal").click(e =>  {
         $('.modal-container .modal').hide(1000);
