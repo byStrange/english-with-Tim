@@ -65,6 +65,23 @@ $('#teachers .owl-carousel').owlCarousel({
         }
     },
 })
+
+$('#about-us .owl-carousel').owlCarousel({
+    center: true,
+    dots: !0,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        1400: {
+            items: 3,
+        },
+        1600: {
+            items: 4
+        }
+    },
+})
+
 function checkSize() {
     if(window.innerWidth < 1124) {
         $('header .nav-links').slideUp(100);
@@ -84,24 +101,6 @@ $('.share').on('mouseleave', function (e) {
 }
 checkSize()
 $(window).on('resize', checkSize)
-document.querySelectorAll('dots').forEach(e => {
-    var cols = parseInt( e.getAttribute('cols'))
-    var rows = e.getAttribute('rows');
-    var dots = parseInt(e.getAttribute('dots'))
-    var color = e.getAttribute('bcolor');  
-    var x = e.getAttribute('x');
-    var y = e.getAttribute('y');
-    for (let i = 0 ; i < dots; i++) {
-        var dot = document.createElement('div');
-        dot.classList.add('dot');
-        dot.style.backgroundColor = color;
-        e.appendChild(dot);
-        e.css({
-            width: cols * 15 + 'px',
-            height: rows * 8 + 'px',
-        })
-    }   
-});
 $(function(){
     $(document).ready(function () {
         $('#faq .hidden').slideUp();
@@ -128,8 +127,11 @@ $(function(){
             $('.modal-container').hide();
         }, 900)
     })
+})
+
+function showModal() {
     $("#openmodal").click(e =>  {
         $('.modal-container').show();
         $('.modal-container .modal').show(1000);
     })
-})
+}

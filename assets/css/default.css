@@ -7,7 +7,7 @@
     font-family: "Gilroy", sans-serif;
 }
 
-body,html {
+body, html {
     overflow-x: hidden;
     scroll-behavior: smooth
 }
@@ -27,6 +27,10 @@ body,html {
 
 .img {
     overflow: hidden;
+}
+
+#teachers .img {
+    background: linear-gradient(to bottom, #E6E8E8, #999F9F);
 }
 
 ul li {
@@ -163,6 +167,12 @@ img {
     font-weight: bold;
     z-index: -1;
     opacity: .05;
+}
+
+@media screen and (max-width: 767px) {
+    :is(.container, main)::after {
+        font-size: 70px !important;
+    }
 }
 
 section {

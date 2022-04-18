@@ -83,7 +83,7 @@
             <img src="assets/media/images/header_bottom.png" width="250px">
         </div>
         <div .absolute.img bottom="0" right="0" sm:left:-300px!>
-            <img src="assets/media/images/header_right.png" width="1000px" >
+            <img src="assets/media/images/header_right.png" width="1000px">
             <div .shadow></div>
         </div>
         <div .absolute.img.messages top="50%" left="55%" sm:left:0!>
@@ -123,8 +123,10 @@
             </div>
             <div .content>
                 <b><span>IELTS - Гарантируем как минимум 6.5 - 7.0 band score</span></b>
-                <p>IELTS (International English Language Testing System) - это способ продемонстрировать свои навыки владения английским языком и открыть двери к международным возможностям.</p>
-                <p>IELTS (International English Language Testing System) - это способ продемонстрировать свои навыки владения английским языком и открыть двери к международным возможностям.</p>
+                <p>IELTS (International English Language Testing System) - это способ продемонстрировать свои навыки
+                    владения английским языком и открыть двери к международным возможностям.</p>
+                <p>IELTS (International English Language Testing System) - это способ продемонстрировать свои навыки
+                    владения английским языком и открыть двери к международным возможностям.</p>
 
                 <ul>
                     <li>Поможет Вам подготовиться к сдаче IELTS</li>
@@ -221,7 +223,7 @@
                     <span>Курсы</span>
                 </div>
                 <div>
-                    <button .btn.default sm:display:none!>
+                    <button .btn.default sm:display:none! onclick="showModal()">
                         <span>Записаться на курс</span>
                         <span .fas.fa-angle-right></span>
                     </button>
@@ -457,16 +459,16 @@
                     </div>
                     <div .content>
                         <p .name>
-                            <span>Chriss Moore</span>
+                            <span>Тим</span>
                         </p>
                         <p>
-                            <span>8 years of experience</span>
+                            <!-- <span>8 years of experience</span> -->
                         </p>
                     </div>
                 </div>
                 <div .card>
                     <div .img>
-                        <img src="assets/media/images/slider_users/user-1.png" alt="">
+                        <img src="assets/media/images/slider_users/user-2.png" alt="">
                         <div .share>
                             <div .open display="flex" width="100%" justifyContent="space-between">
                                 <div .icon>
@@ -490,16 +492,16 @@
                     </div>
                     <div .content>
                         <p .name>
-                            <span>Chriss Moore</span>
+                            <span>Саркор</span>
                         </p>
                         <p>
-                            <span>8 years of experience</span>
+                            <!-- <span>8 years of experience</span> -->
                         </p>
                     </div>
                 </div>
                 <div .card>
                     <div .img>
-                        <img src="assets/media/images/slider_users/user-1.png" alt="">
+                        <img src="assets/media/images/slider_users/user-3.png" alt="">
                         <div .share>
                             <div .open display="flex" width="100%" justifyContent="space-between">
                                 <div .icon>
@@ -523,10 +525,10 @@
                     </div>
                     <div .content>
                         <p .name>
-                            <span>Chriss Moore</span>
+                            <span>Искандар</span>
                         </p>
                         <p>
-                            <span>8 years of experience</span>
+                            <!-- <span>8 years of experience</span> -->
                         </p>
                     </div>
                 </div>
@@ -605,9 +607,9 @@
             </div>
         </div>
     </section>
-    <!-- 
+
     <section #about-us>
-        <div .container>
+        <div .container data-background-title="testimonials">
             <div>
                 <button .btn.sm>
                     <span><span .marked>Testimonials</span> about us</span>
@@ -624,29 +626,95 @@
                     </button>
                 </div>
             </div>
-
-            <dots  .dots cols="25" rows="8" dots="200" bcolor="var(--s-main-color)" left="35%"></dots>
-            <dots .dots cols="3" rows="6" dots="18" bcolor="gray" left="70%"></dots>
-            <div .absolute.img>
-                <img src="assets/media/images/little_images/image-1.png" width="70px">
-            </div>
-            <div .absolute.img>
-                <img src="assets/media/images/little_images/image-1.png" width="100px">
-            </div>
-            <div .absolute.img>
-                <img src="assets/media/images/little_images/image-3.png" width="120px">
-            </div>
-            <div .absolute.img>
-                <img src="assets/media/images/little_images/image-4.png" width="70px">
-            </div>
-            <div .absolute.img>
-                <img src="assets/media/images/little_images/image-5.png" width="100px">
-            </div>
-            <div .absolute.img>
-                <img src="assets/media/images/little_images/image-6.png" width="70px">
+            <div .pupils.owl-carousel marginTop="100px">
+                <div .pupil-card>
+                    <div .top>
+                        <div .img>
+                            <img src="assets/media/images/little_images/image-1.png" alt="">
+                        </div>
+                        <div>
+                            <p>Chriss Moore</p>
+                            <span .marked>Student</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Знаете, English with Tim меня научил многому, почти 2 года я обучаюсь здесь. Я начала с
+                            Beginner’а, но сейчас у меня Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
+                            учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
+                            очень повезло, что я учусь в этом центре.</p>
+                    </div>
+                </div>
+                <div .pupil-card>
+                    <div .top>
+                        <div .img>
+                            <img src="assets/media/images/little_images/image-1.png" alt="">
+                        </div>
+                        <div>
+                            <p>Chriss Moore</p>
+                            <span .marked>Student</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Знаете, English with Tim меня научил многому, почти 2 года я обучаюсь здесь. Я начала с
+                            Beginner’а, но сейчас у меня Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
+                            учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
+                            очень повезло, что я учусь в этом центре.</p>
+                    </div>
+                </div>
+                <div .pupil-card>
+                    <div .top>
+                        <div .img>
+                            <img src="assets/media/images/little_images/image-1.png" alt="">
+                        </div>
+                        <div>
+                            <p>Chriss Moore</p>
+                            <span .marked>Student</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Знаете, English with Tim меня научил многому, почти 2 года я обучаюсь здесь. Я начала с
+                            Beginner’а, но сейчас у меня Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
+                            учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
+                            очень повезло, что я учусь в этом центре.</p>
+                    </div>
+                </div>
+                <div .pupil-card>
+                    <div .top>
+                        <div .img>
+                            <img src="assets/media/images/little_images/image-1.png" alt="">
+                        </div>
+                        <div>
+                            <p>Chriss Moore</p>
+                            <span .marked>Student</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Знаете, English with Tim меня научил многому, почти 2 года я обучаюсь здесь. Я начала с
+                            Beginner’а, но сейчас у меня Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
+                            учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
+                            очень повезло, что я учусь в этом центре.</p>
+                    </div>
+                </div>
+                <div .pupil-card>
+                    <div .top>
+                        <div .img>
+                            <img src="assets/media/images/little_images/image-1.png" alt="">
+                        </div>
+                        <div>
+                            <p>Chriss Moore</p>
+                            <span .marked>Student</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Знаете, English with Tim меня научил многому, почти 2 года я обучаюсь здесь. Я начала с
+                            Beginner’а, но сейчас у меня Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
+                            учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
+                            очень повезло, что я учусь в этом центре.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <section #faq>
         <div .container>
@@ -665,7 +733,21 @@
                     <ul>
                         <li>
                             <div>
-                                <span .question>1 Кто основатель Tim ? </span>
+                                <span .question>1 Какой метод обучения используется в Tim?</span>
+                                <span .collapse button>
+                                </span>
+                            </div>
+                            <p .hidden>
+                                Студенты Tim проходят обучение на основе коммуникативного метода обучения. Это означает,
+                                что работа на занятиях строится на основе практических ситуаций общения, которые могут
+                                возникнуть в повседневной жизни. При этом отрабатываются четыре основных языковых
+                                навыка: чтение, письмо, аудирование и устная речь. Все упражнения на уроках отражают
+                                реальные ситуации и составлены таким образом, чтобы студенты как можно больше общались.
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <span .question>2 На какой результат я могу рассчитывать после курса?</span>
                                 <span .collapse button>
                                 </span>
                             </div>
@@ -676,18 +758,7 @@
                         </li>
                         <li>
                             <div>
-                                <span .question>1 Кто основатель Tim ? </span>
-                                <span .collapse button>
-                                </span>
-                            </div>
-                            <p .hidden>
-                                Nulla lacus, et et faucibus tortor massa. Rutrum habitasse nunc condimentum mi vel sit
-                                pulvinar eget leo.
-                            </p>
-                        </li>
-                        <li>
-                            <div>
-                                <span .question>1 Кто основатель Tim ? </span>
+                                <span .question>3 С какого возраста можно учиться на курсах?</span>
                                 <span .collapse button>
                                 </span>
                             </div>
@@ -699,7 +770,7 @@
                         </li>
                         <li>
                             <div>
-                                <span .question>1 Кто основатель Tim ? </span>
+                                <span .question>4 Выучу ли я английский язык в «Tim» за полгода?</span>
                                 <span .collapse button>
                                 </span>
                             </div>
@@ -714,7 +785,7 @@
                     <ul>
                         <li>
                             <div>
-                                <span .question>1 Кто основатель Tim ? </span>
+                                <span .question>5 Преподаете ли вы другие языки/предметы, кроме английского?</span>
                                 <span .collapse button>
                                 </span>
                             </div>
@@ -725,7 +796,7 @@
                         </li>
                         <li>
                             <div>
-                                <span .question>1 Кто основатель Tim ? </span>
+                                <span .question>6 Снимается ли оплата за пропущенные занятия и как?</span>
                                 <span .collapse button>
                                 </span>
                             </div>
@@ -736,7 +807,7 @@
                         </li>
                         <li>
                             <div>
-                                <span .question>1 Кто основатель Tim ? </span>
+                                <span .question>7 Как проходят занятия в группах? </span>
                                 <span .collapse button>
                                 </span>
                             </div>
@@ -748,7 +819,7 @@
                         </li>
                         <li>
                             <div>
-                                <span .question>1 Кто основатель Tim ? </span>
+                                <span .question>8 Какое самое позднее вечернее время вы предлагаете?</span>
                                 <span .collapse button>
                                 </span>
                             </div>
@@ -763,7 +834,7 @@
         </div>
     </section>
 
-    
+
     <section #gallery background="#fff" paddingTop="40px">
         <div .container>
             <div>
@@ -778,7 +849,7 @@
                 <div sm:display:none!>
                     <button .btn.default>
                         <span>Все фото</span>
-                        <span  .fas.fa-angle-right></span>
+                        <span .fas.fa-angle-right></span>
                     </button>
                 </div>
             </div>
@@ -803,7 +874,7 @@
                         </div>
                     </div>
                     <div .col sm:display:none!>
-                        <div .img >
+                        <div .img>
                             <img src="assets/media/images/gallery/image-4.png" width="100%">
                         </div>
                     </div>
@@ -816,7 +887,7 @@
                         </div>
                     </div>
                     <div .col sm:display:none!>
-                        <div .img >
+                        <div .img>
                             <img src="assets/media/images/gallery/image-9.png" width="100%">
                         </div>
                     </div>
@@ -827,8 +898,8 @@
                         </div>
                     </div>
 
-                    <div .col sm:display:none! >
-                        <div .img >
+                    <div .col sm:display:none!>
+                        <div .img>
                             <img src="assets/media/images/gallery/image-3.png" width="100%">
                         </div>
                     </div>
@@ -842,7 +913,7 @@
                         </div>
                     </div>
                     <div .col sm:display:none!>
-                        <div .img >
+                        <div .img>
                             <img src="assets/media/images/gallery/image-10.png" width="100%">
                         </div>
                     </div>
@@ -851,8 +922,8 @@
                             <img src="assets/media/images/gallery/image-8.png" width="100%">
                         </div>
                     </div>
-                    <div .col >
-                        <div .img >
+                    <div .col>
+                        <div .img>
                             <img src="assets/media/images/gallery/image-10.png" width="100%">
                         </div>
                     </div>
@@ -873,8 +944,8 @@
             </div>
             <div .contact-container sm:width:100%!>
                 <div .row sm:flex-direction:column!>
-                    <div .col  position='relative'>
-                        <center marginBottom="80px" position="relative"> 
+                    <div .col position='relative'>
+                        <center marginBottom="80px" position="relative">
                             <div .absolute.img left="-70px" top="-20px">
                                 <img src="assets/media/logo/logo-bordered.png" alt="logo" width="100px">
                             </div>
@@ -882,11 +953,14 @@
                                 <span>English with tim</span>
                             </div>
                         </center>
-                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом.</span></p>
-                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом</p>
+                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан
+                                Буюк Турон 21, за автовокзалом.</span></p>
+                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан
+                                Буюк Турон 21, за автовокзалом</p>
                         <p><span .fas.fa-phone></span><a href="tel:+998001234567">+998 00 123 45 67</a></p>
                         <p><span .fas.fa-phone opacity="0"></span><a href="tel:+998776543210">+998 77 654 32 10</a></p>
-                        <p><span .fas.fa-envelope></span><a href="mailto:englishwithtim@gmail.com">englishwithtim@gmail.com</a></p>
+                        <p><span .fas.fa-envelope></span><a
+                                href="mailto:englishwithtim@gmail.com">englishwithtim@gmail.com</a></p>
                         <div display="flex" marginTop="20px">
                             <div .icon><span .fa-brands.fa-telegram></span></div>
                             <div .icon><span .fa-brands.fa-instagram></span></div>
@@ -901,7 +975,7 @@
                     </div>
                     <div .col #col>
                         <div .title textAlign="center">
-                            <span>Написат нам</span> 
+                            <span>Написат нам</span>
                         </div>
                         <form action="#" marginTop="30px">
                             <div>
@@ -913,7 +987,7 @@
                                 <input type="text" placeholder="Тема">
                             </div>
                             <textarea name="" id="" cols="30" rows="5" placeholder="Текст"></textarea>
-                            <div marginTop="70px"> 
+                            <div marginTop="70px">
                                 <button type="submit" .btn.default display="flex" margin="0 auto">
                                     <span>Отправить сообщениe</span>
                                     <span .fas.fa-angle-right></span>
@@ -921,7 +995,7 @@
                             </div>
                         </form>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -968,11 +1042,14 @@
                         </ul>
                     </div>
                     <div .col width="400px">
-                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом.</span></p>
-                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан Буюк Турон 21, за автовокзалом</p>
+                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан
+                                Буюк Турон 21, за автовокзалом.</span></p>
+                        <p display="flex"><span .fas.fa-location-dot></span><span>Андижанская область, город Андижан
+                                Буюк Турон 21, за автовокзалом</p>
                         <p><span .fas.fa-phone></span><a href="tel:+998001234567">+998 00 123 45 67</a></p>
                         <p><span .fas.fa-phone opacity="0"></span><a href="tel:+998776543210">+998 77 654 32 10</a></p>
-                        <p><span .fas.fa-envelope></span><a href="mailto:englishwithtim@gmail.com">englishwithtim@gmail.com</a></p>
+                        <p><span .fas.fa-envelope></span><a
+                                href="mailto:englishwithtim@gmail.com">englishwithtim@gmail.com</a></p>
                         <div display="flex">
                             <div .icon><span .fa-brands.fa-telegram></span></div>
                             <div .icon><span .fa-brands.fa-instagram></span></div>
