@@ -57,13 +57,23 @@
                 </div>
             </div>
         </header>
-
+        <div .end.line padding="20px 20px">
+            <a .link href="#" #edit>
+                Edit 
+            </a>
+            <div .icon #edit>
+                <span .fas.fa-pen></span> 
+            </div>
+        </div>
         <div .container.gallery>
             <div .row sm:flex-direction:column!>
                 
                 <!-- gallery Item -->
                 <div .col>
                     <img src="../assets/media/images/gallery/image-10.png">
+                    <div .icon>
+                        <span .fas.fa-trash></span>
+                    </div>
                 </div>
                 <!-- /gallery Item -->
 
@@ -80,6 +90,12 @@
 
     <script src="assets/js/core.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script>
+        $('#edit').click(function() {
+            $('.gallery .col').toggleClass('onDelete');
+        });
+    </script>
 </body>
 
 </html>

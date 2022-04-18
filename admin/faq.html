@@ -72,6 +72,9 @@
                     <div .faq>
                         <div .faq-question>
                             <span>Какой метод обучения используется в Tim?</span>
+                            <div  .icon>
+                                <span .fas.fa-trash></span>
+                            </div>
                         </div>
                         <div .faq-answer>
                             <span>Студенты Tim проходят обучение на основе коммуникативного метода обучения. Это
@@ -97,6 +100,12 @@
     </div>
     <script src="assets/js/core.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script>
+        $('#edit').click(function() {
+            $('.faqs .faq').toggleClass('onDelete');
+        });
+    </script>
 </body>
 
 </html>
