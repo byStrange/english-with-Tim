@@ -51,6 +51,7 @@ $(document).ready(function () {
 });
 $('#teachers .owl-carousel').owlCarousel({
     margin: 40,
+    center: true,
     dots: !0,
     responsive: {
         0: {
@@ -58,9 +59,6 @@ $('#teachers .owl-carousel').owlCarousel({
         },
         1400: {
             items: 2,
-        },
-        1300: {
-            items: 1,
         },
         1600: {
             items: 3
