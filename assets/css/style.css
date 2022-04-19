@@ -96,7 +96,7 @@ main .container .context {
     flex-direction: column;
     justify-content: center;
     height: 625px;
-    
+
 }
 
 main .absolute.img {
@@ -124,11 +124,13 @@ main .messages .message {
     align-items: center;
     position: relative;
 }
-main .messages .message img{
+
+main .messages .message img {
     position: relative;
     z-index: 2;
 }
-main .messages .message p{
+
+main .messages .message p {
     padding: 10px 25px;
     background: #fff;
     border-radius: 10px;
@@ -143,29 +145,31 @@ main .messages .message p{
     height: 100vh;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     z-index: 999;
 }
 
-.modal-container .modal{
+.modal-container .modal {
     width: 500px;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
     max-width: 500px;
+    max-height: 100vh;
 }
 
 .modal-container .content {
     padding: 30px;
 }
-.modal-container .content p{
+
+.modal-container .content p {
     margin-bottom: 10px;
 }
 
-.modal-container .content b span{
+.modal-container .content b span {
     display: inline-block;
     font-size: 20px;
     margin-bottom: 20px;
@@ -183,7 +187,7 @@ main .messages .message p{
 }
 
 #whywe .cards .card {
-    width: 400px;
+    width: 500px;
     margin-bottom: 80px;
     display: flex;
     align-items: center;
@@ -192,7 +196,7 @@ main .messages .message p{
 
 .cards .card>span {
     display: inline-block;
-    max-width: 200px;
+    max-width: 400px;
     font-size: 30px;
     font-weight: 400;
     transition: all 200ms;
@@ -230,7 +234,7 @@ main .messages .message p{
     left: 50% !important;
     transform: translateX(-50%);
     color: #1a1a1a !important;
-    opacity: .05
+    opacity: .05;
 }
 
 #courses .cards .card {
@@ -239,10 +243,12 @@ main .messages .message p{
     align-items: center;
     flex-direction: column;
     cursor: default;
-    border-radius: 15px 15px 0 0;
     overflow: hidden;
     cursor: pointer;
     margin: 0 !important;
+    background: #fff;
+    border-radius: 15px;
+    padding-bottom: 25px;
 }
 
 img {
@@ -257,6 +263,7 @@ img {
     font-size: 27px;
     font-weight: bold;
     position: relative;
+    margin-top: 10px;
 }
 
 #courses .card ._title::after {
@@ -279,22 +286,24 @@ img {
     max-width: 200px;
 }
 
-#results .container::after{
-    left: 300px  !important;
-    top: -150px !important;   
+#results .container::after {
+    left: 300px ;
+    top: -150px;
 }
 
 #results .cards {
     margin-top: 40px;
 }
 
-#results .cards .card {
+#results .cards .card.item {
     display: flex;
     cursor: pointer;
-}
-
-#results .cards .card:hover img {
-    transform: scale(1.1);
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 700px;
+    max-height: 400px;
+    /* padding-right: 60px;  */
 }
 
 #results .cards .card img {
@@ -302,9 +311,30 @@ img {
     transition: all 200ms;
 }
 
+#results .cards .card p:not(.name) {
+    width: 200px;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.owl-item:not(.active) {
+    opacity: .7;
+}
+
+
+.owl-item.active {
+    display: flex;
+}
+
 #results .score {
     margin-left: 30px;
 }
+
+#results .score p {
+    display: block !important;
+}
+
 
 #results .card .score p:not(.name) span:not(.marked) {
     opacity: 0.7;
@@ -312,20 +342,32 @@ img {
 
 #results .card .score p {
     font-size: 24px;
-    width: 174px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
+#results .card .score p.name {
+    font-size: 30px;
+}
+
 .score .name {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
+}
+
+#results .card[no] .band-score{
+    margin-top: 10px;
+    margin-bottom: 0 !important;
 }
 
 .score .band-score {
     margin-top: 55px;
     font-weight: bold;
+}
+
+.score .band-score span {
+    font-size: 30px;
 }
 
 #teachers {
@@ -347,13 +389,34 @@ img {
 #teachers .cards .card .content {
     background: #fff;
     color: #000;
-    padding: 4px 10px;
+    padding: 10px;
 }
 
 #teachers .cards .name {
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#teachers .cards .name .fas {
+    cursor: pointer;
+    transition: 200ms;
+    transform: rotate(0);
+}
+
+#teachers .cards .name .fas.rotate {
+    transform: rotate(-180deg)
+}
+
+#teachers .cards .card ._hidden {
+    margin-top: 10px;
+}
+
+#teachers .card {
+    width: 300px;
+    margin: 0 auto;
 }
 
 #teachers .cards :not(.name) {
@@ -385,6 +448,11 @@ img {
 #about-us .pupil-card .top {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+#about-us .pupil-card .img {
+    margin-right: 20px;
 }
 
 .share .icon {
@@ -450,6 +518,10 @@ img {
     cursor: pointer;
 }
 
+#faq .hidden {
+    font-size: 20px;
+}
+
 #faq ul li:first-child {
     border-radius: 0px 5px 0px 0px;
 }
@@ -506,7 +578,7 @@ img {
     align-items: center;
 }
 
-#gallery .col:hover img{
+#gallery .col:hover img {
     transform: scale(1.2)
 }
 
@@ -539,6 +611,8 @@ img {
 
 #contact {
     padding-bottom: 100px;
+    background-color: #fff !important;
+    /* background-color: red; */
 }
 
 #contact .contact-container {
@@ -548,7 +622,7 @@ img {
 }
 
 #contact .row {
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 #contact .contact-container .col:first-child {
@@ -559,16 +633,16 @@ img {
     width: 40%;
 }
 
-#contact form{
+#contact form {
     width: 100%;
 }
 
-#contact .absolute.img > div {
-    width: 70px; 
-     height: 70px; 
-     background: var(--s-offer-content-background); 
-     display: flex; 
-     justify-content: center; 
+#contact .absolute.img>div {
+    width: 70px;
+    height: 70px;
+    background: var(--s-offer-content-background);
+    display: flex;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
 }
@@ -579,17 +653,20 @@ img {
     content: "\f00d";
 }
 
-#contact .absolute.img, #contact .absolute.img * {
+#contact .absolute.img,
+#contact .absolute.img * {
     transition: 1000ms;
 }
-#contact .absolute.img._  {
+
+#contact .absolute.img._ {
     right: -70px !important;
 }
+
 #contact .absolute.img._ span::after {
     content: "\f0e0" !important;
 }
 
-#contact form > div{
+#contact form>div {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -597,15 +674,17 @@ img {
 }
 
 
-#contact .contact-container .col#col{
+#contact .contact-container .col#col {
     background: #fff;
     width: 60%;
 }
+
 #contact .contact-container .col {
     padding: 90px 35px 50px 20px;
 }
 
-:is(#contact, form)  input, textarea {
+:is(#contact, form) input,
+textarea {
     border: none;
     padding: 10px 0;
     border-bottom: 1px solid var(--s-offer-content-background);
@@ -613,11 +692,7 @@ img {
     font-size: 18px;
 }
 
-:not(a) :focus {
-    border-bottom: 2px solid var(--s-offer-content-background);
-}
-
-:is(#contact, form)  textarea {
+:is(#contact, form) textarea {
     width: 100%;
 }
 
@@ -663,8 +738,9 @@ img {
 :is(#footer, #contact) p a {
     color: #fff;
     text-decoration: none;
-    transition: 200ms; 
+    transition: 200ms;
 }
+
 :is(#footer, #contact) p {
     margin-bottom: 15px;
 }
@@ -702,35 +778,29 @@ img {
 }
 
 
+@media screen and (max-width: 2000px) {
+    .message[d] {
+        left: 550px !important;
+    }
 
-@media screen and (max-width: 991px) {
-    #faq ul li span.question {
-        font-size: 24px !important;
+    .message[c] {
+        left: 50px !important;
+        top: -70px !important;
     }
-    #footer .row {
-        flex-direction: column;
-    }
-    #footer .row .col:not(:last-child) {
-        margin-bottom: 20px;
-    }
-    
-    :is(#contact, #footer) p .fas {
-        margin-right: 13px;
-    } 
 }
-
 
 
 @media screen and (max-width: 1124px) {
     header .nav-links li {
         margin: 0 10px !important;
     }
+
     header .nav-links {
         position: absolute !important;
         top: 100px !important;
         width: 100vw !important;
         padding: 20px !important;
-        display: flex ;
+        display: flex;
         flex-direction: column;
         left: -6% !important;
         z-index: 15;
@@ -741,26 +811,77 @@ img {
         border-bottom: 2px solid var(--s-main-color);
     }
 
-    header .nav-links li{
+    header .nav-links li {
         padding: 10px;
     }
-    header #move{
+
+    header #move {
         display: none;
     }
 }
 
+@media screen and (max-width: 991px) {
+    #faq ul li span.question {
+        font-size: 24px !important;
+    }
+
+    #footer .row {
+        flex-direction: column;
+    }
+
+    #footer .row .col:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    :is(#contact, #footer) p .fas {
+        margin-right: 13px;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .owl-item.active {
+        display: flex;
+    }
+    #results .card {
+        margin: 0 auto;
+    }
+    #results .cards .card.item {
+        padding-right: 15px !important;
+    }
+
+    #results .cards .card p {
+        margin-bottom: 10px;
+    }
+    #results .card .band-score {
+        margin-top: 10px;
+        margin-bottom: 0 !important;
+    }
+
+    main>.container::after {
+        top: 0 !important;
+    }
+
+    .message[d] {
+        left: 0px !important;
+    }
     #gallery .gallery .line {
         display: flex;
     }
-    #contact form > div {
+
+    #contact form>div {
         flex-direction: column;
         margin-bottom: 0 !important;
     }
-    #contact form > div input{
+
+    #contact form>div input {
         width: 100%;
         margin-bottom: 7px;
     }
+    
+    .cards .card>span {
+        max-width: 250px;
+    }
+
     .gallery .row .col {
         height: 140px !important;
         max-width: 200px !important;
@@ -806,6 +927,7 @@ img {
     #teachers {
         padding: 40px 0 !important;
     }
+
     #whywe .cards .card {
         margin-bottom: 40px !important;
     }
@@ -832,35 +954,38 @@ img {
         flex-direction: column !important;
     }
 }
-    /* owl carousel default options */
-    .owl-dots {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px
-    }
-    
-    .owl-dots .owl-dot span {
-        width: 10px;
-        height: 10px;
-        margin: 5px 7px;
-        background: #1a1a1a;
-        display: block;
-        opacity: .5;
-        -webkit-backface-visibility: visible;
-        transition: opacity .2s ease;
-        border-radius: 30px
-    }
-    
-    .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-        background: #1a1a1a;
-        opacity: 1
-    }
-    
-    .owl-theme[light] .owl-dots .owl-dot span {
-        background: #fff;
-        opacity: .5
-    }
-    
-    .owl-theme .owl-dots .owl-dot:hover span, .owl-theme[light] .owl-dots .owl-dot.active span {
-        opacity: 1
-    }
+
+/* owl carousel default options */
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+}
+
+.owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #1a1a1a;
+    display: block;
+    opacity: .5;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px
+}
+
+.owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #1a1a1a;
+    opacity: 1
+}
+
+.owl-theme[light] .owl-dots .owl-dot span {
+    background: #fff;
+    opacity: .5
+}
+
+.owl-theme .owl-dots .owl-dot:hover span,
+.owl-theme[light] .owl-dots .owl-dot.active span {
+    opacity: 1
+}

@@ -1,99 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Shop Admin</title>
+    <title>Gallery</title>
 </head>
 
 <body>
 
-    <div .left-panel height="100vh">
-        <div .toggle-panel>
-            <div .logo>
-                <a href="index.html">Админ</a>
+    <div class="left-panel collapsed">
+        <div class="toggle-panel">
+            <div class="logo">
+                <a href="index.html">Admin</a>
             </div>
-            <div .toggler>
-                <div .toggler-icon>
+            <div class="toggler">
+                <div class="toggler-icon">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
         </div>
-        <div .link-list>
-            <ul .list ionic>
-                <li .item icon="panel"><a href="index.html">Главная</a></li>
-                <li .item icon="course"><a href="courses.html">Курсы</a></li>
-                <li .item icon="teacher"><a href="teachers.html">Учитель</a></li>
-                <li .item icon="faq"><a href="faq.html">ЧАВО</a></li>
-                <li .item.active icon="gallery"><a href="gallery.html">Галерея</a></li>
-                <li .item icon="sms"><a href="sms.html">СМС</a></li>
-                <li .item icon="settings"><a href="settings.html">Настройка</a></li>
+        <div class="link-list">
+            <ul ionic class="list">
+                <li icon="panel" class="item"><a href="index.html">Admin</a></li>
+                <li icon="course" class="item"><a href="courses.html">Courses</a></li>
+                <li icon="teacher" class="item"><a href="teachers.html">Teachers</a></li>
+                <li icon="faq" class="item"><a href="faq.html">FAQ</a></li>
+                <li icon="gallery" class="item active"><a href="gallery.html">Gallery</a></li>
+                <li icon="sms" class="item"><a href="contact.html">Contacts</a></li>
+                <li icon="settings" class="item"><a href="settings.html">Settings</a></li>
             </ul>
         </div>
     </div>
 
 
-    <div main .container.open display="inline-block">
+    <div main class="container open">
         <header>
-            <div .user>
-                <div .user-info>
-                    <div .user-image>
+            <div class="user">
+                <div class="user-info">
+                    <div class="user-image">
                         <img src="//picsum.photos/50" alt="user">
                     </div>
-                    <div .user-info-name>
+                    <div class="user-info-name">
                         <p>Welcome</p>
-                        <h1 fontSize="24px">Stphan Mc Mollan</h1>
+                        <h1 style="font-size: 24px;">Stphan Mc Mollan</h1>
                     </div>
                 </div>
             </div>
-            <div .search-panel>
-                <div .search-panel-input>
-                    <input type="text" placeholder="Qidiruv...">
+            <div class="search-panel">
+                <div class="search-panel-input">
+                    <input type="text" placeholder="Search...">
                 </div>
             </div>
         </header>
-        <div .end.line padding="20px 20px">
-            <a .link href="#" #edit>
-                Edit 
+        <div style="padding: 20px;" class="end line">
+            <a href="#" class="link" id="edit">
+                Edit
             </a>
-            <div .icon #edit>
-                <span .fas.fa-pen></span> 
+            <div class="icon" id="edit">
+                <span class="fas fa-pen"></span>
             </div>
         </div>
-        <div .container.gallery>
-            <div .row sm:flex-direction:column!>
-                
+        <div class="container gallery">
+            <div class="row">
+
                 <!-- gallery Item -->
-                <div .col>
+                <div class="col">
                     <img src="../assets/media/images/gallery/image-10.png">
-                    <div .icon>
-                        <span .fas.fa-trash></span>
+                    <div class="icon">
+                        <span class="fas fa-trash"></span>
                     </div>
                 </div>
                 <!-- /gallery Item -->
 
             </div>
         </div>
-        <div .container display="flex">
-            <div margin="10% auto">
-                <button .btn.padding #open>
-                    <span>Add photo</span>
-                </button>
-            </div>
-        </div>
+        <center>
+          <button class="btn padding" id="open">
+              <span>Add photo</span>
+          </button>
+        </center>
     </div>
 
-    <div .modal>
-        <div .box>
-            <div  .title position="relative">
+    <div class="modal">
+        <div class="box" style="display: none; height: auto;">
+            <div style="position: relative;" class="title">
                 <span>FAQ</span>
-                <div position="absolute" right="0" top="0" type="button">
-                    <span .fas.fa-times #hide></span>
+                <div type="button" style="position: absolute; right: 0px; top: 0px;">
+                    <span class="fas fa-times" id="hide"></span>
                 </div>
             </div>
             <form action="">
@@ -103,7 +98,7 @@
                 </div>
                 <div>
                     <div>
-                        <input type="submit" value="Add photo" .padding.btn>
+                        <input type="submit" value="Add photo" class="padding btn">
                     </div>
                 </div>
             </form>
@@ -111,7 +106,6 @@
     </div>
 
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/core.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         $('#edit').click(function() {
@@ -121,5 +115,4 @@
         });
     </script>
 </body>
-
 </html>

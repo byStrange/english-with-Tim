@@ -1,137 +1,132 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <title>Shop Admin</title>
+    <title>Courses</title>
 </head>
 
 <body>
 
-    <div .left-panel display="inline-block" height="100vh">
-        <div .toggle-panel>
-            <div .logo>
-                <a href="index.html">Админ</a>
+    <div class="left-panel collapsed">
+        <div class="toggle-panel">
+            <div class="logo">
+                <a href="index.html">Admin</a>
             </div>
-            <div .toggler>
-                <div .toggler-icon>
+            <div class="toggler">
+                <div class="toggler-icon">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
         </div>
-        <div .link-list>
-            <ul .list ionic>
-                <li .item icon="panel"><a href="index.html">Главная</a></li>
-                <li .item.active icon="course"><a href="courses.html">Курсы</a></li>
-                <li .item icon="teacher"><a href="teachers.html">Учитель</a></li>
-                <li .item icon="faq"><a href="faq.html">ЧАВО</a></li>
-                <li .item icon="gallery"><a href="gallery.html">Галерея</a></li>
-                <li .item icon="sms"><a href="sms.html">СМС</a></li>
-                <li .item icon="settings"><a href="settings.html">Настройка</a></li>
+        <div class="link-list">
+            <ul ionic class="list">
+                <li icon="panel" class="item"><a href="index.html">Admin</a></li>
+                <li icon="course" class="item active"><a href="courses.html">Courses</a></li>
+                <li icon="teacher" class="item"><a href="teachers.html">Teachers</a></li>
+                <li icon="faq" class="item active"><a href="faq.html">FAQ</a></li>
+                <li icon="gallery" class="item"><a href="gallery.html">Gallery</a></li>
+                <li icon="sms" class="item"><a href="contact.html">Contacts</a></li>
+                <li icon="settings" class="item"><a href="settings.html">Settings</a></li>
             </ul>
         </div>
     </div>
 
-    <div main .container.open>
+    <div main class="container open">
         <header>
-            <div .user>
-                <div .user-info>
-                    <div .user-image>
+            <div class="user">
+                <div class="user-info">
+                    <div class="user-image">
                         <img src="//picsum.photos/50" alt="user">
                     </div>
-                    <div .user-info-name>
+                    <div class="user-info-name">
                         <p>Welcome</p>
-                        <h1 fontSize="24px">Stphan Mc Mollan</h1>
+                        <h1 fontsize="24px" style="font-size: 24px;">Stphan Mc Mollan</h1>
                     </div>
                 </div>
             </div>
-            <div .search-panel>
-                <div .search-panel-input>
-                    <input type="text" placeholder="Qidiruv...">
+            <div class="search-panel">
+                <div class="search-panel-input">
+                    <input type="text" placeholder="Search...">
                 </div>
             </div>
         </header>
-        <div .end.line display="flex" justifyContent="flex-end" padding="20px 20px">
-            <a .link href="#" #edit>
+        <div style="display: flex; justify-content: flex-end; padding: 20px;" class="end line">
+            <a href="#" class="link" id="edit">
                 Edit
             </a>
-            <div .icon #edit>
-                <span .fas.fa-pen></span>
+            <div class="icon" id="edit">
+                <span class="fas fa-pen"></span>
             </div>
         </div>
-        <div .container marginLeft="50px">
-            <div .cards.owl-carousel.owl-theme>
-                <div .card>
-                    <div .img.top.header>
-                        <img src="assets/images/courses/course-1.png" alt="course_1">
-                        <div .icon>
-                            <span .fas.fa-trash></span>
-                        </div>
-                    </div>
-                    <div .content>
-                        <div ._title>
-                            <span>Англиский для детей</span>
-                        </div>
-                        <div ._descripton>
-                            <span>Улучшите свой английский на основе всех четырех навыков</span>
-                        </div>
-                    </div>
-                </div>
-                <div .card>
-                    <div .img.top.header>
-                        <img src="assets/images/courses/course-2.png" alt="course_1">
-                        <div .icon>
-                            <span .fas.fa-trash></span>
-                        </div>
-                    </div>
-                    <div .content>
-                        <div ._title>
-                            <span>Англиский для детей</span>
-                        </div>
-                        <div ._descripton>
-                            <span>Улучшите свой английский на основе всех четырех навыков</span>
-                        </div>
-                    </div>
-                </div>
-                <div .card>
-                    <div .img.top.header>
-                        <img src="assets/images/courses/course-3.png" alt="course_1">
-                        <div .icon>
-                            <span .fas.fa-trash></span>
-                        </div>
-                    </div>
-                    <div .content>
-                        <div ._title>
-                            <span>Англиский для детей</span>
-                        </div>
-                        <div ._descripton>
-                            <span>Улучшите свой английский на основе всех четырех навыков</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div .container display="flex">
-                <div margin="10% auto">
-                    <button .btn.padding #open>
-                        <span>Add course</span>
-                    </button>
-                </div>
-            </div>
+        <div class="container">
+          <div class="cards">
+              <div class="card">
+                  <div class="img top header">
+                      <img src="assets/images/courses/course-1.png" alt="course_1">
+                      <div class='icon'>
+                          <span class="fas fa-trash"></span>
+                      </div>
+                  </div>
+                  <div class='content'>
+                      <div class='_title'>
+                          <span>Англиский для детей</span>
+                      </div>
+                      <div class="_descripton">
+                          <span>Улучшите свой английский на основе всех четырех навыков</span>
+                      </div>
+                  </div>
+              </div>
+              <div class='card'>
+                  <div class='img top header'>
+                      <img src="assets/images/courses/course-2.png" alt="course_1">
+                      <div class='icon'>
+                          <span class="fas fa-trash"></span>
+                      </div>
+                  </div>
+                  <div class='content'>
+                      <div class='_title'>
+                          <span>Англиский для детей</span>
+                      </div>
+                      <div class="_descripton">
+                          <span>Улучшите свой английский на основе всех четырех навыков</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class='img top header'>
+                      <img src="assets/images/courses/course-3.png" alt="course_1">
+                      <div class='icon'>
+                          <span class="fas fa-trash"></span>
+                      </div>
+                  </div>
+                  <div class='content'>
+                      <div class='_title'>
+                          <span>Англиский для детей</span>
+                      </div>
+                      <div class="_descripton">
+                          <span>Улучшите свой английский на основе всех четырех навыков</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        <center style='margin-top: 100px'>
+          <button class="btn padding" id="open">
+              <span>Add course</span>
+          </button>
+        </center>
         </div>
     </div>
-    <div .modal>
-        <div .box>
-            <div  .title position="relative">
+    <div class="modal">
+        <div class="box" style="display: none;">
+            <div style="position: relative;" class="title">
                 <span>Add course</span>
-                <div position="absolute" right="0" top="0" type="button">
-                    <span .fas.fa-times #hide></span>
+                <div  type="button" style="position: absolute; right: 0px; top: 0px;">
+                    <span class="fas fa-times" id="hide"></span>
                 </div>
             </div>
             <form action="">
@@ -157,35 +152,15 @@
                 </div>
                 <div>
                     <div>
-                        <input type="submit" value="Add course" .padding.btn>
+                        <input type="submit" value="Add course" class="padding btn">
                     </div>
                 </div>
             </form>
         </div>
     </div>
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/core.js"></script>
     <script src="assets/js/main.js"></script>
-
     <script>
-        $(".owl-carousel").owlCarousel({
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                1000: {
-                    items: 3,
-                }
-            },
-            reponsiveClass: true,
-            autoplayHoverPause: false,
-            autoplay: false,
-            smartSpeed: 1000,
-            dots: true,
-            center: true,
-            margin: 10
-        });
         $('#edit').on('click', function () {
             if ($('#edit').text()=='cancel')  $('#edit').text('edit')
             else $('#edit').text('cancel')
@@ -193,5 +168,4 @@
         })
     </script>
 </body>
-
 </html>

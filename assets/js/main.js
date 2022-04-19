@@ -30,12 +30,10 @@ $(document).ready(function () {
         autoplay: false,
         smartSpeed: 1000,
         dots: true,
-        center: true,
         margin: 10
     });
     $("#results .owl-carousel").owlCarousel({
-        center: true,
-        items: 2,
+        margin: 10,
         responsive: {
             0: {
                 items: 1,
@@ -44,29 +42,35 @@ $(document).ready(function () {
                 items: 2,
             },
             1600: {
-                items: 3
+                items: 3,
             }
         },
     })
 });
 $('#teachers .owl-carousel').owlCarousel({
-    margin: 40,
-    center: true,
-    dots: !0,
+    dots: true,
     responsive: {
         0: {
             items: 1,
+            center: true
         },
         1400: {
             items: 2,
         },
         1600: {
-            items: 3
+            items: 4
         }
     },
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true
 })
 
 $('#about-us .owl-carousel').owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
     center: true,
     dots: !0,
     responsive: {
@@ -83,7 +87,7 @@ $('#about-us .owl-carousel').owlCarousel({
 })
 
 function checkSize() {
-    if(window.innerWidth < 1124) {
+    if (window.innerWidth < 1124) {
         $('header .nav-links').slideUp(100);
     } else {
         $('header .nav-links').slideDown(100);
@@ -92,23 +96,28 @@ function checkSize() {
         $('.share .hidden').addClass('open')
     } else {
         $('.share .icon:first-child').on('mouseenter', function (e) {
-    $(this)[0].parentElement.querySelector('.hidden').classList.add('open')
-})
-$('.share').on('mouseleave', function (e) {
-    $('.share .hidden').removeClass('open')
-})
+            $(this)[0].parentElement.querySelector('.hidden').classList.add('open')
+        })
+        $('.share').on('mouseleave', function (e) {
+            $('.share .hidden').removeClass('open')
+        })
     }
 }
 checkSize()
 $(window).on('resize', checkSize)
-$(function(){
+$(function () {
     $(document).ready(function () {
+        $('#teachers ._hidden').slideUp(1)
+        $('#teachers .card .name span.fas').click(function () {
+            $(this).parent().parent().children().eq(1).slideToggle(200)
+            $(this).toggleClass('rotate')
+        })
         $('#faq .hidden').slideUp();
-        $('#faq .collapse[button]').click(function(e){
+        $('#faq .collapse[button]').click(function (e) {
             $(this).parent().parent().children().eq(1).slideToggle(200);
             $(this).parent().parent().toggleClass('active');
         })
-        $('#faq li:not(.active) .question').click(function(e){
+        $('#faq li:not(.active) .question').click(function (e) {
             $(this).parent().parent().children().eq(1).slideToggle(200);
             $(this).parent().parent().toggleClass('active');
         })
@@ -120,18 +129,15 @@ $(function(){
         $('#contact #col').toggle(1000);
         document.querySelectorAll('#contact .absolute.img')[1].classList.toggle('_')
     })
+    $("#openmodal").click(e => {
+        $('.modal-container').show();
+        $('.modal-container .modal').show(1000);
+    })
     $('.modal-container').hide();
-    $("#closemodal").click(e =>  {
+    $("#closemodal").click(e => {
         $('.modal-container .modal').hide(1000);
         setTimeout(() => {
             $('.modal-container').hide();
         }, 900)
     })
 })
-
-function showModal() {
-    $("#openmodal").click(e =>  {
-        $('.modal-container').show();
-        $('.modal-container .modal').show(1000);
-    })
-}

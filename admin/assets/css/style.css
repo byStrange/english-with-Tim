@@ -199,8 +199,11 @@ body>.container {
 .mini-cards {
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .mini-cards .cardy {
@@ -348,68 +351,11 @@ form input, form select, form  textarea {
     background: #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 img {
     transition: all 350ms;
-}
-
-@keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
-
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
-
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
-}
-
-.card.onDelete {
-    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) infinite;
-}
-
-.faq.onDelete {
-    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) infinite;
-}
-
-.col.onDelete {
-    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) infinite;
 }
 
 .cards .card:hover .img.top.header img {
@@ -523,16 +469,6 @@ img {
     font-size: 17px;
 }
 
-#gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#gallery .col:hover img {
-    transform: scale(1.2)
-}
-
 .gallery .row .col {
     margin-left: 20px;
     margin-bottom: 20px;
@@ -635,6 +571,22 @@ img {
     color: #fff;
 }
 
+.modal .icon {
+  border: 1px solid #000;
+  background: rgba(0,0,0,0.1);
+  border-radius: 0;
+  border-top-left-radius: 10px;
+  padding: 15px;
+  border: 2px solid #6B6D73;
+  border-right: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.modal .icon {
+  color: #000;
+  background: rgba(0,0,0,0.15);
+}
+
 .line a {
     margin-right: 10px;
     font-size: 18px;
@@ -721,6 +673,8 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: scroll;
+    height: 100%;
 }
 
 .modal .box form > div {
@@ -728,11 +682,31 @@ img {
     flex-direction: column;
 }
 
-.modal .box form > div {
-    margin: 20px 0 ;
-}
-
 .modal .box form label{
     font-size: 18px;
     margin-bottom: 5px;
+}
+
+
+.modal .box form > div {
+    margin: 20px 0;
+}
+
+.modal .box form > div.field {
+  flex-direction: row;
+}
+
+.modal .box form > div.field label{
+  margin-bottom: 0;
+}
+
+.modal .box form > div.field input{
+  border-left: none;
+  width: 90%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.modal form label {
+  display: flex;
 }

@@ -54,6 +54,10 @@ img {
     font-size: 20px;
 }
 
+.btn.light, .btn.sm {
+    background: #fff;
+}
+
 .text.big {
     font-size: 60px;
 }
@@ -109,14 +113,15 @@ img {
     transition: 250ms;
 }
 
-.btn:hover .fas {
+.btn.default:hover .fas {
     opacity: 1;
     transform: translateX(7px);
 }
 
-.btn:hover {
+.btn.default:hover {
     box-shadow: var(--s-main-header-box-shadow);
-    transform: translateX(- 3px)
+    transform: translateX(-3px);
+    background:  #28314B;
 }
 
 .container .title {
@@ -167,6 +172,23 @@ img {
     font-weight: bold;
     z-index: -1;
     opacity: .05;
+    animation: movee 35s linear infinite;
+}
+
+.btn.default.dark:hover {
+    background: #28314B;
+}
+
+@keyframes movee {
+    0% {
+        left: 0 !important;
+    }
+    50%{ 
+        left: 300px
+    }
+    100% {
+        left: 0 !important;
+    }
 }
 
 @media screen and (max-width: 767px) {

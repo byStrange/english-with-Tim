@@ -1,96 +1,91 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/fonts/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Shop Admin</title>
+    <title>Teachers</title>
 </head>
-
 <body>
 
-    <div .left-panel display="inline-block" height="100vh">
-        <div .toggle-panel>
-            <div .logo>
-                <a href="index.html">Админ</a>
+    <div class="left-panel collapsed">
+        <div class="toggle-panel">
+            <div class="logo">
+                <a href="index.html">Admin</a>
             </div>
-            <div .toggler>
-                <div .toggler-icon>
+            <div class="toggler">
+                <div class="toggler-icon">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
         </div>
-        <div .link-list>
-            <ul .list ionic>
-                <li .item icon="panel"><a href="index.html">Главная</a></li>
-                <li .item icon="course"><a href="courses.html">Курсы</a></li>
-                <li .item.active icon="teacher"><a href="teachers.html">Учитель</a></li>
-                <li .item icon="faq"><a href="faq.html">ЧАВО</a></li>
-                <li .item icon="gallery"><a href="gallery.html">Галерея</a></li>
-                <li .item icon="sms"><a href="sms.html">СМС</a></li>
-                <li .item icon="settings"><a href="settings.html">Настройка</a></li>
+        <div class="link-list">
+            <ul ionic class="list">
+                <li icon="panel" class="item"><a href="index.html">Admin</a></li>
+                <li icon="course" class="item"><a href="courses.html">Courses</a></li>
+                <li icon="teacher" class="item active"><a href="teachers.html">Teachers</a></li>
+                <li icon="faq" class="item"><a href="faq.html">FAQ</a></li>
+                <li icon="gallery" class="item"><a href="gallery.html">Gallery</a></li>
+                <li icon="sms" class="item"><a href="contact.html">Contacts</a></li>
+                <li icon="settings" class="item"><a href="settings.html">Settings</a></li>
             </ul>
         </div>
     </div>
 
-    <div main .container.open display="inline-block">
+    <div main class="container open">
         <header>
-            <div .user>
-                <div .user-info>
-                    <div .user-image>
+            <div class="user">
+                <div class="user-info">
+                    <div class="user-image">
                         <img src="//picsum.photos/50" alt="user">
                     </div>
-                    <div .user-info-name>
+                    <div class="user-info-name">
                         <p>Welcome</p>
-                        <h1 fontSize="24px">Stphan Mc Mollan</h1>
+                        <h1 fontsize="24px" style="font-size: 24px;">Stphan Mc Mollan</h1>
                     </div>
                 </div>
             </div>
-            <div .search-panel>
-                <div .search-panel-input>
-                    <input type="text" placeholder="Qidiruv...">
+            <div class="search-panel">
+                <div class="search-panel-input">
+                    <input type="text" placeholder="Search...">
                 </div>
             </div>
         </header>
-        <div .end.line padding="20px 20px">
-            <a .link href="#" #edit>
-                Edit 
-            </a>
-            <div .icon #edit>
-                <span .fas.fa-pen></span> 
+        <div style="padding: 20px;" class="end line">
+            <a href="#" class="link" id="edit">edit</a>
+            <div class="icon" id="edit">
+                <span class="fas fa-pen"></span>
             </div>
         </div>
-        <div .container marginTop="30px">
-            <div .cards>
-                <div .row>
-                    
+        <div style="margin-top: 30px;" class="container">
+            <div class="cards">
+                <div class="row">
+
                     <!-- Teacher card -->
-                    <div .card>
-                        <div .top>
-                            <div .img>
-                                <img src="assets/images/user-square.png" alt="user" width="200px">
+                    <div class="card">
+                        <div class="top">
+                            <div class="img">
+                                <img src="assets/images/user-square.png" alt="user" style="width: 200px;">
                             </div>
-                            <div .content>
-                                <p><b>
-                                        Chriss Moore
-                                    </b></p>
+                            <div class="content">
+                                <p>
+                                  <b>Chriss Moore</b>
+                                </p>
                                 <p>8 years of experience</p>
-                                <ul display="flex" marginTop="10px">
-                                    <li><a href="#"><span .fa-brands.fa-facebook></span></a></li>
-                                    <li><a href="#"><span .fa-brands.fa-twitter></span></a></li>
-                                    <li><a href="#"><span .fa-brands.fa-instagram></span></a></li>
+                                <ul style="display: flex; margin-top: 10px;">
+                                    <li><a href="#"><span class="fa-brands fa-facebook"></span></a></li>
+                                    <li><a href="#"><span class="fa-brands fa-twitter"></span></a></li>
+                                    <li><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
                                 </ul>
                             </div>
-                            <div .icon>
-                                <span .fas.fa-trash></span>
+                            <div class="icon">
+                                <span class="fas fa-trash"></span>
                             </div>
                         </div>
-                        <div .bottom>
+                        <div class="bottom">
                             <p>
                                 The very Tim, the IELTS expert everyone in the city already knows about. For more than a
                                 dozen years he's helped thousands of students to achieve the score they desire. Our Tim
@@ -101,25 +96,23 @@
                         </div>
                     </div>
                     <!-- /Teacher card -->
-                
+
                 </div>
             </div>
         </div>
-        <div .container display="flex">
-            <div margin="10% auto">
-                <button .btn.padding #open>
-                    <span>Add teacher</span>
-                </button>
-            </div>
-        </div>
+        <center style='margin-top: 30px;'>
+          <button class="btn padding" id="open">
+              <span>Add teacher</span>
+          </button>
+        </center>
     </div>
 
-    <div .modal>
-        <div .box>
-            <div  .title position="relative">
+    <div class="modal">
+        <div class="box" style="display: none;">
+            <div style="position: relative;" class="title">
                 <span>Add teacher</span>
-                <div position="absolute" right="0" top="0" type="button">
-                    <span .fas.fa-times #hide></span>
+                <div type="button" style="position: absolute; right: 0px; top: 0px;">
+                    <span class="fas fa-times" id="hide"></span>
                 </div>
             </div>
             <form action="">
@@ -149,22 +142,20 @@
                 </div>
                 <div>
                     <div>
-                        <input type="submit" value="Add teacher" .padding.btn>
+                        <input type="submit" value="Add teacher" class="padding btn">
                     </div>
                 </div>
             </form>
         </div>
     </div>
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/core.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         $('#edit').click(function() {
-            if ($('#edit').text()=='cancel')  $('#edit').text('edit')
+            if ($('#edit').text()=='cancel') $('#edit').text('edit')
             else $('#edit').text('cancel')
             $('.card').toggleClass('onDelete');
         });
     </script>
 </body>
-
 </html>
