@@ -419,10 +419,6 @@ img {
     margin: 0 auto;
 }
 
-#teachers .card {
-    width: 300px;
-}
-
 #teachers .cards :not(.name) {
     font-size: 20px;
 }
@@ -881,7 +877,7 @@ textarea {
         width: 100%;
         margin-bottom: 7px;
     }
-
+    
     .cards .card>span {
         max-width: 250px;
     }

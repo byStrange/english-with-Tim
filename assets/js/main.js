@@ -57,9 +57,6 @@ $('#teachers .owl-carousel').owlCarousel({
         1400: {
             items: 2,
         },
-        1300: {
-            items: 2
-        },
         1600: {
             items: 4
         }

@@ -293,9 +293,8 @@ form input, form select, form  textarea {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 776px) {
+/* @media screen and (max-width: 776px) {
     body {
-        /* overflow: auto; */
         overflow-x: hidden;
     }
 
@@ -336,7 +335,7 @@ form input, form select, form  textarea {
     .edit-panel {
         width: 100% !important;
     }
-}
+} */
 
 .cards .card {
     max-width: 400px !important;
