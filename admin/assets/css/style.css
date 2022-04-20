@@ -293,6 +293,11 @@ form input, form select, form  textarea {
     border-radius: 10px;
 }
 
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 /* @media screen and (max-width: 776px) {
     body {
         overflow-x: hidden;
@@ -346,11 +351,10 @@ form input, form select, form  textarea {
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
-    margin: 0 !important;
     background: #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 img {
@@ -363,6 +367,7 @@ img {
 
 .card .img, .card .top, .faq-question{
     position: relative;
+    overflow: hidden;
 }
 
 .card .img .icon, .card .top .icon, .faq-question .icon, .col .icon {
