@@ -85,11 +85,6 @@ main {
     position: relative;
 }
 
-main .container::after {
-    color: #fff !important;
-    opacity: 1 !important;
-}
-
 main .container .context {
     width: 700px;
     display: flex;
@@ -619,6 +614,7 @@ img {
     width: 80%;
     margin: 20px auto;
     max-width: 1000px;
+    transition: 250ms;
 }
 
 #contact .row {
@@ -791,6 +787,9 @@ textarea {
 
 
 @media screen and (max-width: 1124px) {
+    header .burger {
+      display: block !important;
+    }
     header .nav-links li {
         margin: 0 10px !important;
     }
@@ -877,7 +876,7 @@ textarea {
         width: 100%;
         margin-bottom: 7px;
     }
-    
+
     .cards .card>span {
         max-width: 250px;
     }

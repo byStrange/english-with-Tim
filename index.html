@@ -12,9 +12,9 @@
     <!-- font awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- /font awesome css  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/owl.carousel.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/css/splide.min.css">
     <!-- main css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- /main css -->
@@ -46,7 +46,7 @@
                 <li><a href="#contact">Контакты</a></li>
                 <div #move></div>
             </ul>
-            <div .burger display="none" md:display:block!>
+            <div .burger display="none">
                 <span .fas.fa-bars></span>
             </div>
         </div>
@@ -81,12 +81,13 @@
                 </div>
             </div>
         </div>
-        <div .absolute.img left="0" bottom="-10px" md:display:none!>
+        <div .absolute.img left="0" bottom="-10px" zIndex=1 md:display:none!>
             <img src="assets/media/images/header_bottom.png" width="250px">
         </div>
-        <div .absolute.img bottom="0" right="0" sm:left:-700px!>
-            <img src="assets/media/images/main.jpg" width="1500px">
-            <div .shadow></div>
+        <div position='relative'>
+          <div .absolute.img bottom="0" right="0" sm:left:-700px!>
+              <img src="assets/media/images/main.jpg" width="1500px">
+          </div>
         </div>
         <div .absolute.img.messages top="50%" left="55%" sm:left:0!>
             <div position="relative">
@@ -231,8 +232,10 @@
                     </button>
                 </div>
             </div>
-            <div .cards.owl-carousel.owl-theme marginTop="60px" width="90%"  margin="0 auto">
-                <div .card>
+            <div .cards.splide #splide1 marginTop="60px" width="90%"  margin="0 auto">
+              <div .splide__track>
+                <ul .splide__list>
+                  <li .splide__slide> <div .card>
                     <div .img.top.header>
                         <img src="assets/media/images/courses/course-1.png" alt="course_1">
                     </div>
@@ -244,8 +247,8 @@
                             <span>Улучшите свой английский на основе всех четырех навыков</span>
                         </div>
                     </div>
-                </div>
-                <div .card>
+                </div> </li>
+                  <li .splide__slide> <div .card>
                     <div .img.top.header>
                         <img src="assets/media/images/courses/course-2.png" alt="course_1">
                     </div>
@@ -257,8 +260,8 @@
                             <span>Улучшите свой английский на основе всех четырех навыков</span>
                         </div>
                     </div>
-                </div>
-                <div .card>
+                </div> </li>
+                  <li .splide__slide> <div .card>
                     <div .img.top.header>
                         <img src="assets/media/images/courses/course-3.png" alt="course_1">
                     </div>
@@ -270,7 +273,9 @@
                             <span>Улучшите свой английский на основе всех четырех навыков</span>
                         </div>
                     </div>
-                </div>
+                </div> </li>
+                </ul>
+              </div>
             </div>
         </div>
     </section>
@@ -284,8 +289,11 @@
                 <div .title>
                     <span width="500px">Результаты наших учеников</span>
                 </div>
-                <div .owl-carousel.cards>
-                    <div .card.item>
+                <div .cards.splide #splide2>
+                  <div .splide__track>
+                    <ul .splide__list>
+                      <li .splide__slide>
+                        <div .card.item>
                         <div .left-side>
                             <img src="assets/media/images/ielts/score-1.png" alt="">
                         </div>
@@ -310,7 +318,8 @@
                             </p>
                         </div>
                     </div>
-                    <div .card.item>
+                  </li>
+                    <li .splide__slide> <div .card.item>
                         <div .left-side>
                             <img src="assets/media/images/ielts/score-2.png" alt="">
                         </div>
@@ -334,8 +343,8 @@
                                 Bandscore:<span .marked>7.5</span>
                             </p>
                         </div>
-                    </div>
-                    <div .card.item>
+                    </div> </li>
+                    <li .splide__slide> <div .card.item>
                         <div .left-side>
                             <img src="assets/media/images/ielts/score-4.png" alt="">
                         </div>
@@ -359,8 +368,8 @@
                                 Bandscore:<span .marked>8.0</span>
                             </p>
                         </div>
-                    </div>
-                    <div .card.item>
+                    </div> </li>
+                    <li .splide__slide> <div .card.item>
                         <div .left-side>
                             <img src="assets/media/images/ielts/score-5.png" alt="">
                         </div>
@@ -384,8 +393,8 @@
                                 Bandscore:<span .marked>7.0</span>
                             </p>
                         </div>
-                    </div>
-                    <div .card.item no>
+                    </div> </li>
+                    <li .splide__slide> <div .card.item>
                         <div .left-side>
                             <img src="assets/media/images/ielts/score-6.png" alt="">
                         </div>
@@ -409,8 +418,8 @@
                                 Bandscore:<span .marked>7.0</span>
                             </p>
                         </div>
-                    </div>
-                    <div .card.item no>
+                    </div> </li>
+                    <li .splide__slide> <div .card.item>
                         <div .left-side>
                             <img src="assets/media/images/ielts/score-7.png" alt="">
                         </div>
@@ -434,8 +443,8 @@
                                 Bandscore:<span .marked>7.0</span>
                             </p>
                         </div>
-                    </div>
-                    <div .card.item>
+                    </div> </li>
+                    <li .splide__slide> <div .card.item>
                         <div .left-side>
                             <img src="assets/media/images/ielts/score-1.png" alt="">
                         </div>
@@ -459,7 +468,7 @@
                                 Bandscore:<span .marked>8.0</span>
                             </p>
                         </div>
-                    </div>
+                    </div> </li>
                 </div>
             </div>
         </div>
@@ -483,8 +492,11 @@
                     </button>
                 </div>
             </div>
-            <div .cards.owl-carousel.owl-theme light marginTop="20px">
-                <div .card>
+            <div .cards.splide #splide3 light marginTop="20px" width="75%" sm:width:100%!>
+              <div .splide__track>
+              <ul .splide__list>
+                <li .splide__slide>
+                  <div .card>
                     <div .img>
                         <img src="assets/media/images/slider_users/teacher-1.png" alt="">
                         <div .share>
@@ -520,8 +532,10 @@
                             вы ищете настоящего гуру IELTS, считайте вы уже его нашли.
                         </p>
                     </div>
-                </div>
-                <div .card>
+                  </div>
+                </li>
+                <li .splide__slide>
+    <div .card>
                     <div .img>
                         <img src="assets/media/images/slider_users/teacher-2.png" alt="">
                         <div .share>
@@ -558,44 +572,48 @@
                         </p>
                     </div>
                 </div>
-                <div .card>
-                    <div .img>
-                        <img src="assets/media/images/slider_users/teacher-4.png" alt="">
-                        <div .share>
-                            <div .open display="flex" width="100%" justifyContent="space-between">
-                                <div .icon>
-                                    <i class="fas fa-share-nodes"></i>
-                                </div>
-                                <div .hidden display="flex">
-                                    <div .icon>
-                                        <i .fa-brands.fa-facebook-f></i>
-                                    </div>
+              </li>
+                <li .splide__slide>
+                  <div .card>
+                      <div .img>
+                          <img src="assets/media/images/slider_users/teacher-4.png" alt="">
+                          <div .share>
+                              <div .open display="flex" width="100%" justifyContent="space-between">
+                                  <div .icon>
+                                      <i class="fas fa-share-nodes"></i>
+                                  </div>
+                                  <div .hidden display="flex">
+                                      <div .icon>
+                                          <i .fa-brands.fa-facebook-f></i>
+                                      </div>
 
-                                    <div .icon>
-                                        <i .fa-brands.fa-instagram></i>
-                                    </div>
+                                      <div .icon>
+                                          <i .fa-brands.fa-instagram></i>
+                                      </div>
 
-                                    <div .icon>
-                                        <i .fa-brands.fa-twitter></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div .content>
-                        <p .name>
-                            <span>Бекзодбек</span>
-                            <span .fas.fa-caret-down></span>
-                        </p>
-                        <p ._hidden>
-                            Его ученики часто описывают его как серьезного, опытного и сосредоточенного. Шесть лет
-                            преподавания научили его адаптироваться и добиться от каждого ученика лучших результатов.
-                            Если вы ищете спокойную и целеустремленную атмосферу во время занятий, вы всегда можете на
-                            него рассчитывать.
-                        </p>
-                    </div>
-                </div>
-                <div .card>
+                                      <div .icon>
+                                          <i .fa-brands.fa-twitter></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div .content>
+                          <p .name>
+                              <span>Бекзодбек</span>
+                              <span .fas.fa-caret-down></span>
+                          </p>
+                          <p ._hidden>
+                              Его ученики часто описывают его как серьезного, опытного и сосредоточенного. Шесть лет
+                              преподавания научили его адаптироваться и добиться от каждого ученика лучших результатов.
+                              Если вы ищете спокойную и целеустремленную атмосферу во время занятий, вы всегда можете на
+                              него рассчитывать.
+                          </p>
+                      </div>
+                  </div>
+                </li>
+
+                <li .splide__slide> <div .card>
                     <div .img>
                         <img src="assets/media/images/slider_users/teacher-5.png" alt="">
                         <div .share>
@@ -632,7 +650,8 @@
                         </p>
                     </div>
                 </div>
-                <div .card>
+</li>
+                <li .splide__slide> <div .card>
                     <div .img>
                         <img src="assets/media/images/slider_users/teacher-6.png" alt="">
                         <div .share>
@@ -669,7 +688,8 @@
                         </p>
                     </div>
                 </div>
-                <div .card>
+</li>
+                <li .splide__slide> <div .card>
                     <div .img>
                         <img src="assets/media/images/slider_users/teacher-7.png" alt="">
                         <div .share>
@@ -705,7 +725,8 @@
                         </p>
                     </div>
                 </div>
-                <div .card>
+</li>
+                <li .splide__slide> <div .card>
                     <div .img>
                         <img src="assets/media/images/slider_users/teacher-8.png" alt="">
                         <div .share>
@@ -742,7 +763,8 @@
                         </p>
                     </div>
                 </div>
-                <div .card>
+</li>
+                <li .splide__slide> <div .card>
                     <div .img>
                         <img src="assets/media/images/slider_users/teacher-9.png" alt="">
                         <div .share>
@@ -778,7 +800,8 @@
                         </p>
                     </div>
                 </div>
-                <div .card>
+</li>
+                <li .splide__slide> <div .card>
                     <div .img>
                         <img src="assets/media/images/slider_users/teacher-10.png" alt="">
                         <div .share>
@@ -815,7 +838,8 @@
                         </p>
                     </div>
                 </div>
-                <div .card>
+</li>
+                <li .splide__slide> <div .card>
                     <div .img>
                         <img src="assets/media/images/slider_users/teacher-11.png" alt="">
                         <div .share>
@@ -849,6 +873,8 @@
                         </p>
                     </div>
                 </div>
+              </ul></li>
+            </div>
             </div>
             <div marginTop="50px" sm:display:flex! display="none">
                 <button .btn.default>
@@ -877,8 +903,114 @@
                     </button>
                 </div>
             </div>
-            <div .pupils.owl-carousel marginTop="100px">
-                <div .pupil-card>
+            <div .pupils.splide #splide4 marginTop="100px">
+            <div .splide__track>
+              <ul .splide__list>
+                <div .pupil-card.splide__slide>
+                    <div .top>
+                        <div .img>
+                            <img src="assets/media/images/little_images/image-2.png" alt="">
+                        </div>
+                        <div>
+                            <p>Chriss Moore</p>
+                            <span .marked>Student</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Знаете, English with Tim меня научил многому, почти 2 года я обучаюсь здесь. Я начала с
+                            Beginner’а, но сейчас у меня Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
+                            учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
+                            очень повезло, что я учусь в этом центре.</p>
+                    </div>
+                </div>
+                <div .pupil-card.splide__slide>
+                    <div .top>
+                        <div .img>
+                            <img src="assets/media/images/little_images/image-2.png" alt="">
+                        </div>
+                        <div>
+                            <p>Chriss Moore</p>
+                            <span .marked>Student</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Знаете, English with Tim меня научил многому, почти 2 года я обучаюсь здесь. Я начала с
+                            Beginner’а, но сейчас у меня Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
+                            учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
+                            очень повезло, что я учусь в этом центре.</p>
+                    </div>
+                </div>
+                <div .pupil-card.splide__slide>
+                    <div .top>
+                        <div .img>
+                            <img src="assets/media/images/little_images/image-2.png" alt="">
+                        </div>
+                        <div>
+                            <p>Chriss Moore</p>
+                            <span .marked>Student</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Знаете, English with Tim меня научил многому, почти 2 года я обучаюсь здесь. Я начала с
+                            Beginner’а, но сейчас у меня Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
+                            учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
+                            очень повезло, что я учусь в этом центре.</p>
+                    </div>
+                </div>
+                <div .pupil-card.splide__slide>
+                    <div .top>
+                        <div .img>
+                            <img src="assets/media/images/little_images/image-2.png" alt="">
+                        </div>
+                        <div>
+                            <p>Chriss Moore</p>
+                            <span .marked>Student</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Знаете, English with Tim меня научил многому, почти 2 года я обучаюсь здесь. Я начала с
+                            Beginner’а, но сейчас у меня Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
+                            учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
+                            очень повезло, что я учусь в этом центре.</p>
+                    </div>
+                </div>
+                <div .pupil-card.splide__slide>
+                    <div .top>
+                        <div .img>
+                            <img src="assets/media/images/little_images/image-2.png" alt="">
+                        </div>
+                        <div>
+                            <p>Chriss Moore</p>
+                            <span .marked>Student</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Знаете, English with Tim меня научил многому, почти 2 года я обучаюсь здесь. Я начала с
+                            Beginner’а, но сейчас у меня Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
+                            учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
+                            очень повезло, что я учусь в этом центре.</p>
+                    </div>
+                </div>
+                <div .pupil-card.splide__slide>
+                    <div .top>
+                        <div .img>
+                            <img src="assets/media/images/little_images/image-2.png" alt="">
+                        </div>
+                        <div>
+                            <p>Chriss Moore</p>
+                            <span .marked>Student</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Знаете, English with Tim меня научил многому, почти 2 года я обучаюсь здесь. Я начала с
+                            Beginner’а, но сейчас у меня Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
+                            учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
+                            очень повезло, что я учусь в этом центре.</p>
+                    </div>
+                </div>
+              </ul>
+
+                <!-- <div .pupil-card>
                     <div .top>
                         <div .img>
                             <img src="assets/media/images/little_images/image-2.png" alt="">
@@ -945,25 +1077,9 @@
                             учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
                             очень повезло, что я учусь в этом центре.</p>
                     </div>
-                </div>
-                <div .pupil-card>
-                    <div .top>
-                        <div .img>
-                            <img src="assets/media/images/little_images/image-2.png" alt="">
-                        </div>
-                        <div>
-                            <p>Chriss Moore</p>
-                            <span .marked>Student</span>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Знаете, English with Tim меня научил многому, почти 2 года я обучаюсь здесь. Я начала с
-                            Beginner’а, но сейчас у меня Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
-                            учителя энергичные и всегда есть взаимопонимание между учителем и учеником. Да, мне
-                            очень повезло, что я учусь в этом центре.</p>
-                    </div>
-                </div>
+                </div> -->
             </div>
+          </div>
         </div>
     </section>
 
@@ -1184,18 +1300,20 @@
     </section>
 
     <section #contact paddingTop="40px" background="#fff">
-        <div .container>
-            <div>
-                <button .btn.sm>
-                    <span .marked>Contacts</span>
-                </button>
-            </div>
-            <div .title>
-                <span>Контактные данные</span>
-            </div>
+        <div .container position='relative'>
+              <iframe width="100%" position='absolute' left="50%" transform='translateX(-50%)' height="900" id="gmap_canvas" src="https://maps.google.com/maps?q=English%20With%20Tim&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <div position='relative' zIndex=2>
+              <div>
+                  <button .btn.sm.no-borders>
+                      <span .marked>Contacts</span>
+                  </button>
+              </div>
+              <div .title>
+                  <span>Контактные данные</span>
+              </div></div>
             <div .contact-container sm:width:100%!>
                 <div .row sm:flex-direction:column!>
-                    <div .col position='relative'>
+                    <div .col position='relative' zIndex=2>
                         <center marginBottom="80px" position="relative">
                             <div .absolute.img left="-70px" top="-20px">
                                 <img src="assets/media/logo/logo-bordered.png" alt="logo" width="100px">
@@ -1224,7 +1342,7 @@
                             </div>
                         </div>
                     </div>
-                    <div .col #col>
+                    <div .col #col position='relative' zIndex=2>
                         <div .title textAlign="center">
                             <span>Написат нам</span>
                         </div>
@@ -1320,7 +1438,8 @@
 
     <!-- main scripts -->
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- <script src="assets/js/owl.carousel.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/js/splide.min.js" charset="utf-8"></script>
     <script src="assets/js/core.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- /main scripts -->
