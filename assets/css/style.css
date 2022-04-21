@@ -785,42 +785,8 @@ textarea {
     }
 }
 
-@media screen and (max-height: 700px) {
-  .absolute.img[m] img{
-    width: 1200px !important;
-  }
-}
 
-@media screen and (max-width: 1600px) {
-  .message[c] {
-    left: -200px !important;
-    top: 100px !important;
-  }
-  .message[a] {
-    left: -300px !important;
-  }
-  .message[d] {
-    left: 350px !important;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  header .nav-links li {
-    margin: 0 20px !important;
-  }
-}
 @media screen and (max-width: 1124px) {
-  .message[c] {
-    left: -200px !important;
-    top: 100px !important;
-  }
-  .message[a] {
-    left: -350px !important;
-    top: -300px !important;
-  }
-  .message[d] {
-    left: 150px !important;
-  }
     header .burger {
       display: block !important;
     }
@@ -872,18 +838,6 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-  .message[c] {
-    left: -200px !important;
-    top: 100px !important;
-  }
-  .message[a] {
-    left: -350px !important;
-    top: -300px !important;
-  }
-  .message[d] {
-    right: 0 !important;
-    left: 240px !important;
-  }
     .owl-item.active {
         display: flex;
     }
