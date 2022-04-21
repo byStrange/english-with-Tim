@@ -160,6 +160,7 @@ new Splide('#splide3', {
 }),
 new Splide('#splide4', {
   type: 'loop',
+  arrow: false,
   padding: '5rem',
   perPage: 2,
   focus: 'center',
