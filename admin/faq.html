@@ -1,134 +1,149 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible">
-    <meta name="viewport">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>FAQ</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="left-panel collapsed">
-        <div class="toggle-panel">
-            <div class="logo">
-                <a href="index.html">Admin</a>
-            </div>
-            <div class="toggler">
-                <div class="toggler-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+      <div class="toggle-panel">
+        <div class="logo">
+          <a href="index.html">Admin</a>
         </div>
-        <div class="link-list">
-            <ul ionic class="list">
-                <li icon="panel" class="item"><a href="index.html">Admin</a></li>
-                <li icon="course" class="item"><a href="courses.html">Courses</a></li>
-                <li icon="teacher" class="item"><a href="teachers.html">Teachers</a></li>
-                <li icon="faq" class="item active"><a href="faq.html">FAQ</a></li>
-                <li icon="gallery" class="item"><a href="gallery.html">Gallery</a></li>
-                <li icon="sms" class="item"><a href="contact.html">Contacts</a></li>
-                <li icon="settings" class="item"><a href="settings.html">Settings</a></li>
-            </ul>
+        <div class="toggler">
+          <div class="toggler-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
+      </div>
+      <div class="link-list">
+        <ul ionic class="list">
+          <li icon="panel" class="item"><a href="index.html">Admin</a></li>
+          <li icon="course" class="item"><a href="courses.html">Courses</a></li>
+          <li icon="teacher" class="item">
+            <a href="teachers.html">Teachers</a>
+          </li>
+          <li icon="faq" class="item active"><a href="faq.html">FAQ</a></li>
+          <li icon="gallery" class="item">
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li icon="sms" class="item"><a href="contact.html">Contacts</a></li>
+          <li icon="settings" class="item">
+            <a href="settings.html">Settings</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div main class="container open">
-        <header>
-            <div class="user">
-                <div class="user-info">
-                    <div class="user-image">
-                        <img alt="user">
-                    </div>
-                    <div class="user-info-name">
-                        <p>Welcome</p>
-                        <h1 style="font-size: 24px;">Stphan Mc Mollan</h1>
-                    </div>
-                </div>
+      <header>
+        <div class="user">
+          <div class="user-info">
+            <div class="user-image">
+              <img alt="user" />
             </div>
-            <div class="search-panel">
-                <div class="search-panel-input">
-                    <input type="text" placeholder="Search...">
-                </div>
+            <div class="user-info-name">
+              <p>Welcome</p>
+              <h1 style="font-size: 24px">Stphan Mc Mollan</h1>
             </div>
-        </header>
-        <div style="padding: 20px;" class="end line">
-            <a href="#" class="link" id="edit">
-                Edit
-            </a>
-            <div class="icon" id="edit">
-                <span class="fas fa-pen"></span>
-            </div>
+          </div>
         </div>
-        <div class="container">
-            <div class="faqs">
-                <div class="row">
-
-                    <!-- FAQ item -->
-                    <div class="faq">
-                        <div class="faq-question">
-                            <span>Какой метод обучения используется в Tim?</span>
-                            <div class="icon">
-                                <span class="fas fa-trash"></span>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <span>Студенты Tim проходят обучение на основе коммуникативного метода обучения. Это
-                                означает, что работа на занятиях строится на основе практических ситуаций общения,
-                                которые могут возникнуть в повседневной жизни. При этом отрабатываются четыре основных
-                                языковых навыка: чтение, письмо, аудирование и устная речь. Все упражнения на уроках
-                                отражают реальные ситуации и составлены таким образом, чтобы студенты как можно больше
-                                общались.</span>
-                        </div>
-                    </div>
-                    <!-- /FAQ item -->
-
-                </div>
-            </div>
-            <center style='margin-top: 30px;'>
-              <button class="btn padding" id="open">
-                  <span>Add FAQ</span>
-              </button>
-            </center>
+        <div class="search-panel">
+          <div class="search-panel-input">
+            <input type="text" placeholder="Search..." />
+          </div>
         </div>
+      </header>
+      <div style="padding: 20px" class="end line">
+        <a href="#" class="link" id="edit"> Edit </a>
+        <div class="icon" id="edit">
+          <span class="fas fa-pen"></span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="faqs">
+          <div class="row">
+            <!-- FAQ item -->
+            <div class="faq">
+              <div class="faq-question">
+                <span>Какой метод обучения используется в Tim?</span>
+                <div class="icon">
+                  <span class="fas fa-trash"></span>
+                </div>
+              </div>
+              <div class="faq-answer">
+                <span
+                  >Студенты Tim проходят обучение на основе коммуникативного
+                  метода обучения. Это означает, что работа на занятиях строится
+                  на основе практических ситуаций общения, которые могут
+                  возникнуть в повседневной жизни. При этом отрабатываются
+                  четыре основных языковых навыка: чтение, письмо, аудирование и
+                  устная речь. Все упражнения на уроках отражают реальные
+                  ситуации и составлены таким образом, чтобы студенты как можно
+                  больше общались.</span
+                >
+              </div>
+            </div>
+            <!-- /FAQ item -->
+          </div>
+        </div>
+        <center style="margin-top: 30px">
+          <button class="btn padding" id="open">
+            <span>Add FAQ</span>
+          </button>
+        </center>
+      </div>
     </div>
 
     <div class="modal">
-        <div class="box" style="display: none; height: auto">
-            <div style="position: relative;" class="title">
-                <span>FAQ</span>
-                <div type="button" style="position: absolute; right: 0px; top: 0px;">
-                    <span class="fas fa-times" id="hide"></span>
-                </div>
-            </div>
-            <form action="">
-                <div>
-                    <label for="question">Question</label>
-                    <input type="text" id="question" name="name" placeholder="Type name....">
-                </div>
-                <div>
-                    <label for="ans">Answer</label>
-                    <input type="text" id="ans" name="name" placeholder="Type name....">
-                </div>
-                <div>
-                    <div>
-                        <input type="submit" value="Add FAQ" class="padding btn">
-                    </div>
-                </div>
-            </form>
+      <div class="box" style="display: none; height: auto">
+        <div style="position: relative" class="title">
+          <span>FAQ</span>
+          <div type="button" style="position: absolute; right: 0px; top: 0px">
+            <span class="fas fa-times" id="hide"></span>
+          </div>
         </div>
+        <form action="">
+          <div>
+            <label for="question">Question</label>
+            <input
+              type="text"
+              id="question"
+              name="name"
+              placeholder="Type name...."
+            />
+          </div>
+          <div>
+            <label for="ans">Answer</label>
+            <input
+              type="text"
+              id="ans"
+              name="name"
+              placeholder="Type name...."
+            />
+          </div>
+          <div>
+            <div>
+              <input type="submit" value="Add FAQ" class="padding btn" />
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <script src='assets/js/jquery.js'></script>
+    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        $('#edit').click(function() {
-            if ($('#edit').text()=='cancel')  $('#edit').text('edit')
-            else $('#edit').text('cancel')
-            $('.faqs .faq').toggleClass('onDelete');
-        });
+      $("#edit").click(function () {
+        if ($("#edit").text() == "cancel") $("#edit").text("edit");
+        else $("#edit").text("cancel");
+        $(".faqs .faq").toggleClass("onDelete");
+      });
     </script>
-
-</body>
+  </body>
 </html>
