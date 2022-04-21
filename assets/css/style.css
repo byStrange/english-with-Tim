@@ -873,8 +873,8 @@ textarea {
 
 @media screen and (max-width: 768px) {
   .message[c] {
-    left: -200px !important;
-    top: 100px !important;
+    left: 0px !important;
+    top: 40px !important;
   }
   .message[a] {
     left: -350px !important;
