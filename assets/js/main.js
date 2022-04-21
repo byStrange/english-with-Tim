@@ -72,7 +72,93 @@ $(function () {
   })
 })
 
-var splide = new Splide('#splide4', {
+;var splides = [new Splide('#splide1', {
+  perMove: 1,
+  padding: '5rem',
+  gap: '15px',
+  perPage: 1,
+  autoWidth: true,
+  arrows: false,
+  autoplay: true,
+  breakpoints: {
+    767: {
+      perPage: 1,
+      gap: 0,
+      padding: 0,
+      autoWidth: false
+    },
+    1950: {
+      perPage: 4,
+      padding: '5rem',
+      gap: '15px',
+      autoWidth: true
+    },
+    1500: {
+      perPage: 1,
+      autoWidth: true,
+      padding: '5rem',
+      gap: '15px',
+    },
+
+  }
+}), new Splide('#splide2', {
+  perMove: 1,
+  padding: '5rem',
+  gap: '15px',
+  autoWidth: true,
+  perPage: 1,
+  arrows: false,
+  autoplay: true,
+  breakpoints: {
+    767: {
+      perPage: 1,
+      padding: 0,
+      autoWidth: false
+    },
+    1950: {
+      perPage: 4,
+      focus: 'center',
+      padding: '5rem',
+      gap: '15px',
+    },
+    1500: {
+      perPage: 1,
+      padding: '5rem',
+      gap: '15px',
+    },
+
+  }
+}),
+new Splide('#splide3', {
+  padding: '5rem',
+  gap: '15px',
+  perMove: 1,
+  perPage: 1,
+  arrows: false,
+  autoplay: true,
+  breakpoints: {
+    767: {
+      perPage: 1,
+      padding: 0,
+      gap: 0,
+      autoWidth: false
+    },
+    1950: {
+      perPage: 3,
+      autoWidth: true,
+      padding: '5rem',
+      gap: '15px'
+    },
+    1500: {
+      perPage: 2,
+      autoWidth: true,
+      padding: '5rem',
+      gap: '15px'
+    },
+
+  }
+}),
+new Splide('#splide4', {
   type: 'loop',
   padding: '5rem',
   perPage: 2,
@@ -88,99 +174,20 @@ var splide = new Splide('#splide4', {
       autoWidth: false
     },
     1950: {
-      perPage: 4
-    },
-    1500: {
-      perPage: 2
-    },
-
-  }
-});
-splide.mount()
-
-
-var splide2 = new Splide('#splide3', {
-  // type   : 'loop',
-  padding: '5rem',
-  gap: '15px',
-  perMove: 1,
-  // autoWidth: true,
-  perPage: 1,
-  arrows: false,
-  // focus: 'center',
-  autoplay: true,
-  breakpoints: {
-    767: {
-      perPage: 1,
-      padding: 0,
-      gap: 0,
-      autoWidth: false
-    },
-    1950: {
-      perPage: 3
-    },
-    1500: {
-      perPage: 2
-    },
-
-  }
-});
-splide2.mount()
-
-var splide3 = new Splide('#splide2', {
-  // type   : 'loop',
-  perMove: 1,
-  padding: '5rem',
-  gap: '15px',
-  autoWidth: true,
-  perPage: 1,
-  arrows: false,
-  // focus: 'center',
-  autoplay: true,
-  breakpoints: {
-    767: {
-      perPage: 1,
-      padding: 0,
-      autoWidth: false
-    },
-    1950: {
       perPage: 4,
-      focus: 'center'
+      autoWidth: true,
+      padding: '5rem',
+      gap: '20px'
     },
     1500: {
-      perPage: 1
+      perPage: 2,
+      autoWidth: true,
+      padding: '5rem',
+      gap: '20px'
     },
 
   }
-});
-splide3.mount()
-
-var splide1 = new Splide('#splide1', {
-  // type   : 'loop',
-  perMove: 1,
-  padding: '5rem',
-  gap: '15px',
-  perPage: 1,
-  autoWidth: true,
-  arrows: false,
-  // focus: 'center',
-  autoplay: true,
-  breakpoints: {
-    767: {
-      perPage: 1,
-      gap: 0,
-      padding: 0,
-      autoWidth: false
-    },
-    1950: {
-      perPage: 4,
-      autoWidth: true
-    },
-    1500: {
-      perPage: 1,
-      autoWidth: true
-    },
-
-  }
-});
-splide1.mount()
+}) ] ;
+for (var splide of splides) {
+  splide.mount()
+}
