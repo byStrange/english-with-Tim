@@ -161,7 +161,7 @@ var splides = [
   }),
   new Splide("#splide4", {
     type: "loop",
-    arrow: false,
+    arrows: false,
     padding: "5rem",
     perPage: 2,
     focus: "center",
